@@ -42,12 +42,12 @@ Central district ranks third in terms of assault incidents per 10,000 residents.
 In conclusion, understanding the distribution of assault incidents relative to popular New Year's Eve fireworks viewing spots can inform safer celebration plans, highlighting areas to avoid, particularly those neighboring high-crime districts like Tenderloin.
 </p>
 
-{% include map.html %}
-
-<p style="text-align: justify; text-justify: inter-word;">
-Figure 2: 
-Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents. 
-</p>
+<figure>
+  {% include map.html %}
+  <figcaption>
+    Figure 2: Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
+  </figcaption>
+</figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
 To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded. Figure 3 shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
