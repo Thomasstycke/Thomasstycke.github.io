@@ -36,13 +36,13 @@ header:
 
 footer:
   show_powered_by: true
-  contact:
+  contact Thomas Stycke:
     - name: Email
-      value: Email - Thomas Stycke
+      value: Email 
       link: s214742@student.dtu.dk
-  :
+  contact Anna-Sofie Bøgegaard Børresen:
     - name: Email
-      value: Email - Anna-Sofie Bøgegaard Børresen
+      value: Email
       link: s214715@student.dtu.dk
 
 
