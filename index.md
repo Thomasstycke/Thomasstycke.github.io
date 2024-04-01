@@ -13,7 +13,7 @@ Throughout this 15-year period, the average daily count of reported assaults hov
 </p>
 
 
-<img src="/assets/img/calendar_plot.png" alt="Example Image" style="width: 110%; margin-left: -5%; margin-right: -5%;">
+<img src="/assets/img/calendar_plot.png" alt="Example Image" style="width: 150%; margin-left: -25%; margin-right: -25%;">
 
 
 <p style="text-align: justify; text-justify: inter-word;">
