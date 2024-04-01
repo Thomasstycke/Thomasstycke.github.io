@@ -26,5 +26,5 @@ Central district ranks third in terms of assault incidents per 10,000 residents.
 In conclusion, understanding the distribution of assault incidents relative to popular New Year's Eve fireworks viewing spots can inform safer celebration plans, highlighting areas to avoid, particularly those neighboring high-crime districts like Tenderloin.
 </p>
 
-{% include my_plotly_map.html %}
+{% include map.html %}
 
