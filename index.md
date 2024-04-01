@@ -28,3 +28,23 @@ In conclusion, understanding the distribution of assault incidents relative to p
 
 {% include map.html %}
 
+<p style="text-align: justify; text-justify: inter-word;">
+Figure 2: 
+Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents. 
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded. Figure 3 shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
+</p>
+
+{% include bokeh_plot.html %}
+
+<p style="text-align: justify; text-justify: inter-word;">
+Notably, there is a marked increase in assault reports precisely at midnight (00:00 1st of January) spanning across multiple districts. This surge aligns with the anticipated pattern for New Year’s Eve, as it's a time commonly associated with large public gatherings and festivities. Unfortunately, such occasions can also escalate into conflicts and instances of criminal behavior.
+
+All districts show a peak in reports at noon (12:00), which may be somewhat unexpected for assault cases and could be less about the incidence of assaults and more related to administrative activities within the police force. Since this is a time when shift changes often happen and lunch breaks are common, incidents that occurred earlier might be logged at noon, even though they weren't reported immediately. This suggests it's more of a procedural issue than a genuine increase in assault frequency.
+
+Since the plot displays all 24 hours from December 31st it reveals a strong contrast between midnight on December 31st and midnight on January 1st. Similarly, a notable difference can be observed when comparing the late hours of January 1st with those of December 31st. This observation highlights the uniqueness of New Year’s Eve's activities and their impact on public safety.
+</p>
+
+
