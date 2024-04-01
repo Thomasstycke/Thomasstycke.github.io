@@ -19,15 +19,15 @@ Throughout this 15-year period, the average daily count of reported assaults hov
 
 
 <p style="text-align: justify; text-justify: inter-word;">
-If you were planning to celebrate New Year's Eve in San Francisco, it's crucial to know which areas might be safer than others. To provide insights, we investigated the top 7 locations where people gather to watch fireworks and mapped them out <a href="#ref1">Hindustan Times</a>. Our goal was to determine if these popular spots correlate with higher rates of assault incidents, as large crowds often attract incidents.
+If you were planning to celebrate New Year's Eve in San Francisco, it's crucial to know which areas might be safer than others. To provide insights, we investigated the top 7 locations where people gather to watch fireworks and mapped them out <a href="#ref1">[1]</a>. Our goal was to determine if these popular spots correlate with higher rates of assault incidents, as large crowds often attract incidents.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Figure 2 shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from [2].
+Figure 2 shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Tenderloin emerges as the district with the highest recorded assaults per 10,000 residents, which aligns with its reputation as a high-crime neighborhood [3]. A closer look reveals that Tenderloin had a total of 88 recorded assault incidents, surpassing other districts such as Richmond, Taraval, Park, Ingleside, and Bayview.
+Tenderloin emerges as the district with the highest recorded assaults per 10,000 residents, which aligns with its reputation as a high-crime neighborhood <a href="#ref3">[3]</a>. A closer look reveals that Tenderloin had a total of 88 recorded assault incidents, surpassing other districts such as Richmond, Taraval, Park, Ingleside, and Bayview.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
