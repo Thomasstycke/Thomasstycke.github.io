@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   By Thomas Stycke s214742 & Anna-Sofie Bøgegaard Børresen s214715
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomasstycke.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-# og_image: /assets/img/profile-pic.jpg
+og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
 header:
@@ -40,9 +40,13 @@ footer:
     - name: Email
       value: Email - Thomas Stycke
       link: s214742@student.dtu.dk
-    - name: Email
-      value: Email - Anna-Sofie Børresen
-      link: s214715@student.dtu.dk
+  follow:
+    - name: LinkedIn
+      value: LinkedIn - Thomas Stycke
+      link: http://linkedin.com/in/thomas-dyrup-stycke
+    - name: GitHub
+      value: Github - Thomas Stycke
+      link: http://github.com/thomasstycke
 
 
 # Build settings
