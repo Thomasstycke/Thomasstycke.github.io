@@ -21,8 +21,7 @@
 title: Assignement 2 - Social Data Analysis and Visualization
 email: s214742@student.dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my page for Assigment 2 in Social Data Analysis and Visualization at DTU.
-  By Thomas Stycke s214742 & Anna-Sofie Bøgegaard Børresen s214715
+  This is my page for Assigment 2 in Social Data Analysis and Visualization at DTU.                  By Thomas Stycke s214742 & Anna-Sofie Bøgegaard Børresen s214715
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomasstycke.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  thomasstycke
