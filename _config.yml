@@ -40,13 +40,9 @@ footer:
     - name: Email
       value: Email - Thomas Stycke
       link: mailto:s214742@student.dtu.dk
-  follow:
-    - name: LinkedIn
-      value: LinkedIn - Thomas Stycke
-      link: http://linkedin.com/in/thomas-dyrup-stycke
-    - name: GitHub
-      value: Github - Thomas Stycke
-      link: http://github.com/thomasstycke
+    - name: Email
+      value: Email - Anna-Sofie Bøgegaard Børresen
+      link: mailto:s214742@student.dtu.dk
 
 
 # Build settings
