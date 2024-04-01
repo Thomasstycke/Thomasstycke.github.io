@@ -53,9 +53,7 @@ In conclusion, understanding the distribution of assault incidents relative to p
 To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded. Figure 3 shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
 </p>
 
-{% raw %}
 {% include bokeh_plot.html %}
-{% endraw %}
 
 <p style="text-align: justify; text-justify: inter-word;">
 Notably, there is a marked increase in assault reports precisely at midnight (00:00 1st of January) spanning across multiple districts. This surge aligns with the anticipated pattern for New Year’s Eve, as it's a time commonly associated with large public gatherings and festivities. Unfortunately, such occasions can also escalate into conflicts and instances of criminal behavior.
