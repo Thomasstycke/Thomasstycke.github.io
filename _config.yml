@@ -31,7 +31,7 @@ linkedin_username: thomas-dyrup-stycke
 
 
 # Build settings
-theme: bay_jekyll_theme
+theme: minima
 plugins:
   - jekyll-feed
 
