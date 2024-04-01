@@ -37,12 +37,12 @@ header:
 footer:
   show_powered_by: true
   contact:
-    - name: Email
+    - name: Email - Thomas Stycke
       link: s214742@student.dtu.dk
   follow:
-    - name: LinkedIn
+    - name: LinkedIn - Thomas Stycke
       link: http://linkedin.com/in/thomas-dyrup-stycke
-    - name: GitHub
+    - name: GitHub - Thomas Stycke
       link: http://github.com/thomasstycke
 
 
