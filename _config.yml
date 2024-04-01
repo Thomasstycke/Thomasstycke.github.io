@@ -36,14 +36,17 @@ header:
 
 footer:
   show_powered_by: true
-  contact Thomas Stycke:
+  contact:
     - name: Email
-      value: Email 
+      value: Email - Thomas Stycke
       link: s214742@student.dtu.dk
-  contact Anna-Sofie Bøgegaard Børresen:
-    - name: Email
-      value: Email
-      link: s214715@student.dtu.dk
+  follow:
+    - name: LinkedIn
+      value: LinkedIn - Thomas Stycke
+      link: http://linkedin.com/in/thomas-dyrup-stycke
+    - name: GitHub
+      value: Github - Thomas Stycke
+      link: http://github.com/thomasstycke
 
 
 # Build settings
