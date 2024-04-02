@@ -14,7 +14,7 @@ Throughout this 15-year period, the average daily count of reported assaults hov
 
 <figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
   <img src="/assets/img/calendar_plot.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption>Figure 1: Description of the image.</figcaption>
+  <figcaption>Figure 1:  A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
 </figure>
 
 
@@ -74,7 +74,7 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
 
 <ol>
     <li id="ref1"><a href="https://www.hindustantimes.com/world-news/new-years-eve-fireworks-in-san-francisco-top-7-spots-to-ring-in-2024-celebrations-101704006372655-amp.html">New Year's Eve fireworks in San Francisco: Top 7 spots to ring in 2024</a>. Hindustan Times.</li>
-    <li id="ref2"><a href="https://www.prisonpolicy.org/origin/ca/2020/sanfrancisco_police.html">San Francisco police and jail information</a>. Prison Policy Initiative.</li>
+    <li id="ref2"><a href="https://www.prisonpolicy.org/origin/ca/2020/sanfrancisco_police.html">SFPD Disrict Residents</a>. Prison Policy Initiative.</li>
     <li id="ref3"><a href="https://en.wikipedia.org/wiki/Tenderloin,_San_Francisco">Tenderloin, San Francisco</a>. Wikipedia.</li>
 </ol>
 
