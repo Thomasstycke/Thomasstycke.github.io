@@ -31,8 +31,10 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Blog
+    - name: About
+      slug: /about
+    - name: Code
+      slug: /code
 
 footer:
   show_powered_by: true
