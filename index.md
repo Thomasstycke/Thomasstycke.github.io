@@ -88,7 +88,7 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
       margin-right: auto;
     }
     th, td {
-      border: 1px solid black;
+      border: 2px solid black;
       text-align: center;
       padding: 8px;
     }
