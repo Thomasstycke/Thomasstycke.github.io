@@ -18,13 +18,14 @@ slug: /code
 
   .code-block pre {
     margin: 0;
-    padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
+    padding: 10px; /* Added padding to the code block */
+    overflow: auto; /* Added to allow overflow scrolling if needed */
+    word-wrap: break-word; /* Added to wrap long lines */
     position: relative; /* Added for absolute positioning of line numbers */
   }
 
   .code-block code {
     display: block;
-    padding: 10px;
     border-radius: 5px;
     color: black; /* Text color */
     background-color: transparent; /* No background */
@@ -70,9 +71,9 @@ slug: /code
 <span class="code-line">20</span> from matplotlib.colors import LinearSegmentedColormap
 <span class="code-line">21</span> 
 <span class="code-line">22</span> # Define the colors for the custom colormap (green to red)
-<span class="code-line">23</span> colors = [(0.2, 0.8, 0.2),  # Green
-<span class="code-line">24</span>           (1.0, 1.0, 0.6),  # Yellow
-<span class="code-line">25</span>           (0.8, 0.2, 0.2)]  # Red
+<span class="code-line">23</span> colors = [(0.2, 0.8, 0.2),  # A cooler green
+<span class="code-line">24</span>           (1.0, 1.0, 0.6),  # A cooler yellow
+<span class="code-line">25</span>           (0.8, 0.2, 0.2)]  # A cooler red
 <span class="code-line">26</span> 
 <span class="code-line">27</span> n_bins = 100  
 <span class="code-line">28</span> 
