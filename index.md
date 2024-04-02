@@ -44,8 +44,7 @@ In conclusion, understanding the distribution of assault incidents relative to p
 
 <figure id="figure2"> 
   {% include map.html %}
-  <figcaption>
-    <figcaption style="text-align: justify;">
+  <figcaption style="text-align: justify;">
     <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
   </figcaption>
 </figure>
