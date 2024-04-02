@@ -14,7 +14,7 @@ Throughout this 15-year period, the average daily count of reported assaults hov
 
 <figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
   <img src="/assets/img/calendar_plot.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption>Figure 1:  A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
+  <figcaption style="text-align: left;"><b>Figure 1:</b> A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
 </figure>
 
 
