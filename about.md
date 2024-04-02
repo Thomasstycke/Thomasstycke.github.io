@@ -7,12 +7,12 @@ items:
     image:
       src: /assets/img/about/man.png
       alt: water
-    description: Mathematics and Technology, DTU, 6. semester 
+    description: Mathematics and Technology, DTU, 6th semester 
   - title: Anna-Sofie Børrensen
     image:
       src: /assets/img/about/woman.png
       alt: sand
-    description: Mathematics and Technology, DTU, 6. semester 
+    description: Mathematics and Technology, DTU, 6th semester 
 ---
 
 <style>
