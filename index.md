@@ -74,7 +74,11 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-In conclusion, as San Francisco celebrates New Year's Eve with fireworks lighting up the night sky, an underlying trend of increasing assault incidents around midnight comes to light. However, an analysis of assaults near popular fireworks locations does not reveal a consistent trend, suggesting these gatherings themselves do not significantly elevate the risk. On the other hand, spending New Year's Eve in or near the Tenderloin district does present a higher risk, as this area is known for its elevated assault incidents. Choosing where to celebrate could potentially influence the safety and enjoyment of your New Year's Eve experience in the city.
+In conclusion, as San Francisco celebrates New Year's Eve with fireworks lighting up the night sky, an underlying trend of increasing assault incidents around midnight comes to light. However, an analysis of assaults near popular fireworks locations does not reveal a consistent trend, suggesting these gatherings themselves do not significantly elevate the risk. On the other hand, spending New Year's Eve in or near the Tenderloin district does present a higher risk, as this area is known for its elevated assault incidents. 
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Given these insights, how will you choose where to celebrate? Selecting your location could be the key to ensuring the safety and enjoyment of your New Year's Eve experience in the city. Stay safe and make informed choices to welcome the new year with peace and joy.
 </p>
 
 <ol>
