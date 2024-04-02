@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<h2>New Year, Same Story: San Fransisco's Assaults Renewed</h2>
+<h2>New Year, Same Story: San Francisco's Assaults Renewed</h2>
 
 <b style="text-align: justify; text-justify: inter-word;">
 A comprehensive dataset spanning from January 2003 to December 2017, detailing incidents recorded by the San Francisco Police Department, uncovers a troubling trend. Among the various crimes recorded, one stands out: assaults.
