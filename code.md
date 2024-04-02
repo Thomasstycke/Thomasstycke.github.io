@@ -110,7 +110,7 @@ slug: /code
   </div>
 </div>
 
-<p class="code-description">Here is our code for plotting New Year's Eve fireworks locations:</p>
+<h4 class="code-heading">Figure 1:</h4>
 
 <div class="code-block-container">
   <div class="code-block">
