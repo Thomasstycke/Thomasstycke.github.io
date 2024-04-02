@@ -5,12 +5,16 @@ slug: /code
 ---
 
 <style>
+  .code-block {
+    text-align: center; /* Center the box */
+  }
+
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    margin-bottom: 20px;
-    position: relative; /* Added to allow absolute positioning of line numbers */
+    margin: 0 auto; /* Center the box */
     width: 150%; /* Make the box 150% wider */
+    position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
   .code-block pre {
@@ -40,11 +44,14 @@ slug: /code
     padding-right: 5px; /* Adjusted to reduce distance from code */
     pointer-events: none; /* Ensures line numbers do not interfere with text selection */
   }
+
+  .code-block figcaption {
+    display: none; /* Hide the caption */
+  }
 </style>
 
 <div class="code-block">
   <figure>
-    <figcaption>Figure 1: Python Code</figcaption>
     <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
