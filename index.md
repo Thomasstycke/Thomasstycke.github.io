@@ -31,7 +31,7 @@ Tenderloin emerges as the district with the highest recorded assaults per 10,000
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.
+Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, the analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
