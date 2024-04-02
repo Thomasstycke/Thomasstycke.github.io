@@ -56,10 +56,11 @@ slug: /code
   }
 
   .code-text {
-    position: absolute;
+    position: relative;
     left: -25%; /* Align -25% to the left */
     top: -30px; /* Adjust as needed */
     font-weight: bold; /* Make the text bold */
+    text-align: left; /* Align left */
   }
 
   .code-description {
@@ -72,7 +73,7 @@ Here is our code for all our figures:
 </p>
 
 <div class="code-block-container">
-  <b class="code-description">Figure 1:</b>
+  <div class="code-text"><b>Figure 1:</b></div>
   <div class="code-block">
     <figure>
       <pre><code class="python">
