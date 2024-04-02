@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: code
 title: Code
 slug: /code
 ---
