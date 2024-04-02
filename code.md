@@ -12,10 +12,6 @@ slug: /code
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
-  .code-block figcaption {
-    display: none; /* Hide the caption */
-  }
-
   .code-block pre {
     margin: 0;
     padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
