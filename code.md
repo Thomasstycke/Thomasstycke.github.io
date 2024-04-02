@@ -6,18 +6,14 @@ slug: /code
 
 <style>
   .code-block figure {
-    background-color: black;
-    color: #F8F8F2; /* Adjust text color as needed */
-    padding: 10px;
+    border: 2px solid black; /* Black border */
     border-radius: 5px;
     margin-bottom: 20px;
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
   .code-block figcaption {
-    color: #50fa7b; /* Adjust caption color as needed */
-    font-size: 16px;
-    margin-bottom: 10px;
+    display: none; /* Hide the caption */
   }
 
   .code-block pre {
@@ -30,7 +26,8 @@ slug: /code
     display: block;
     padding: 10px;
     border-radius: 5px;
-    background-color: #282a36; /* Adjust code background color as needed */
+    color: black; /* Text color */
+    background-color: transparent; /* No background */
   }
 
   .code-line {
@@ -38,7 +35,7 @@ slug: /code
     left: 0;
     width: 30px; /* Adjust width as needed */
     text-align: right;
-    color: #999; /* Adjust line number color as needed */
+    color: black; /* Line number color */
     padding-right: 10px;
     pointer-events: none; /* Ensures line numbers do not interfere with text selection */
   }
