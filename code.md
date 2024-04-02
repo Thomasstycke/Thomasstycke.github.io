@@ -18,7 +18,7 @@ slug: /code
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    width: 100%; /* Make the box 150% wider */
+    width: 100%;
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
@@ -152,7 +152,7 @@ slug: /code
 <span class="code-line">34</span> january_first_incidents_by_district = january_first_incidents.groupby('PdDistrict').size().reset_index(name='Count')
 <span class="code-line">35</span> 
 <span class="code-line">36</span> # Total population data
-<span class="code-line">37</span> populations = [74191,69961, 138002, 81913, 104067, 63359, 87890, 65166, 155029, 35902]
+<span class="code-line">37</span> populations = [74191, 69961, 138002, 81913, 104067, 63359, 87890, 65166, 155029, 35902]
 <span class="code-line">38</span> 
 <span class="code-line">39</span> january_first_incidents_by_district['Total Population'] = populations
 <span class="code-line">40</span> january_first_incidents_by_district['Incidents per 10.000 Residents'] = (january_first_incidents_by_district['Count'] / january_first_incidents_by_district['Total Population']) * 10000
