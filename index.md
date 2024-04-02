@@ -35,7 +35,7 @@ Southern district follows closely with the second-highest number of assault inci
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Central district ranks third in terms of assault incidents per 10,000 residents. Notably, our analysis reveals a concerning trend: both Southern and Central districts have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
+Central district ranks third in terms of assault incidents per 10,000 residents. Notably, our analysis reveals a concerning trend: both Southern and Central district have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
