@@ -65,11 +65,19 @@ slug: /code
     text-align: left;
     margin-left: -25%; /* Offset to the left */
   }
+  .code-heading {
+    font-weight: bold; /* Makes text bold */
+    position: relative; /* Allows for positioning relative to its normal position */
+    left: -25%; /* Moves the element 25% to the left of its starting point */
+    text-align: left; /* Aligns the text to the left */
+  }
 </style>
 
-<p class="code-description">Here is our code for all our figures:</p>
+<p class="code-heading">Here is our code for all our figures:</p>
+
+<p class="code-description2">Figure 1:</p>
+
 <div class="code-block-container">
-  <div class="code-text"><b>Figure 1:</b></div>
   <div class="code-block">
     <figure>
       <pre><code class="python">
