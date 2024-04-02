@@ -23,7 +23,7 @@ If you were planning to celebrate New Year's Eve in San Francisco, it's crucial 
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Figure 2 shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
+ <a href="#figure2">Figure 2</a> shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
@@ -42,7 +42,7 @@ Central district ranks third in terms of assault incidents per 10,000 residents.
 In conclusion, understanding the distribution of assault incidents relative to popular New Year's Eve fireworks viewing spots can inform safer celebration plans, highlighting areas to avoid, particularly those neighboring high-crime districts like Tenderloin.
 </p>
 
-<figure>
+<figure id="figure2"> 
   {% include map.html %}
   <figcaption>
     <figcaption style="text-align: justify;">
@@ -51,10 +51,10 @@ In conclusion, understanding the distribution of assault incidents relative to p
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded. Figure 3 shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
+To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded.  <a href="#figure3">Figure 3</a> shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
 </p>
 
-<figure>
+<figure id="figure3">
   {% include cleaned_bokeh_plot.html %}
   <figcaption style="text-align: justify;">
   <b>Figure 3:</b> This is the captions:
