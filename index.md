@@ -40,7 +40,7 @@ Central district ranks third in terms of assault incidents per 10,000 residents.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-In conclusion, while the choice of fireworks viewing spots may not significantly impact safety in generally secure areas, it remains wise to avoid places that are close to known high-crime neighborhoods, including Tenderloin.
+In conclusion, while the choice of fireworks viewing spots may not significantly impact safety, it remains wise to avoid places that are close to known high-crime neighborhoods, including Tenderloin.
 </p>
 
 <figure id="figure2"> 
