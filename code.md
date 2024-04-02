@@ -18,7 +18,7 @@ slug: /code
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    width: 100%; /* Make the box 150% wider */
+    width: 150%; /* Make the box 150% wider */
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
@@ -59,10 +59,12 @@ slug: /code
     position: absolute;
     left: -25%; /* Align -25% to the left */
     top: -30px; /* Adjust as needed */
+    font-weight: bold; /* Make the text bold */
   }
 </style>
 
 <div class="code-block-container">
+  <p>Here is our code for all our figures:</p>
   <div class="code-block">
     <p class="code-text">Figure 1:</p>
     <figure>
