@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: work
 title: About
 slug: /about
 items:
