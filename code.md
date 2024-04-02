@@ -57,38 +57,28 @@ slug: /code
     <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
-<span class="code-line">3</span> 
-<span class="code-line">4</span> # Read the dataset
-<span class="code-line">5</span> path = '/Users/thomasstycke/Desktop/DTU/SocialData/Police_Department_Incident_Reports__Historical_2003_to_May_2018_20240130.csv'
-<span class="code-line">6</span> data = pd.read_csv(path)
-<span class="code-line">7</span> data = data[~data['Date'].str.contains('2018')]
-<span class="code-line">8</span> 
-<span class="code-line">9</span> # Filter the data for the 'ASSAULT' category
-<span class="code-line">10</span> assault_data = data[data["Category"] == 'ASSAULT']
-<span class="code-line">11</span> 
-<span class="code-line">12</span> # Convert the 'Date' column to datetime format
-<span class="code-line">13</span> assault_data['Date'] = pd.to_datetime(assault_data['Date'], format='%m/%d/%Y')
+<span class="code-line">3</span> import matplotlib.pyplot as plt
+<span class="code-line">4</span> from matplotlib.colors import LinearSegmentedColormap
+<span class="code-line">5</span> 
+<span class="code-line">6</span> # Load the dataset
+<span class="code-line">7</span> path = '/Users/thomasstycke/Desktop/DTU/SocialData/Police_Department_Incident_Reports__Historical_2003_to_May_2018_20240130.csv'
+<span class="code-line">8</span> data = pd.read_csv(path)
+<span class="code-line">9</span> data = data[~data['Date'].str.contains('2018')]  # Exclude incidents from 2018
+<span class="code-line">10</span> 
+<span class="code-line">11</span> # Filter for 'ASSAULT' category incidents
+<span class="code-line">12</span> assault_data = data[data["Category"] == 'ASSAULT']
+<span class="code-line">13</span> assault_data['Date'] = pd.to_datetime(assault_data['Date'], format='%m/%d/%Y')  # Convert 'Date' to datetime format
 <span class="code-line">14</span> 
-<span class="code-line">15</span> all_days = pd.date_range(assault_data['Date'].min(), assault_data['Date'].max(), freq='D')
-<span class="code-line">16</span> days = len(all_days)
-<span class="code-line">17</span> events = pd.Series(1, index=assault_data['Date'])
-<span class="code-line">18</span> 
-<span class="code-line">19</span> import matplotlib.pyplot as plt
-<span class="code-line">20</span> from matplotlib.colors import LinearSegmentedColormap
+<span class="code-line">15</span> # Create a series of events indexed by date
+<span class="code-line">16</span> events = pd.Series(1, index=assault_data['Date'])
+<span class="code-line">17</span> 
+<span class="code-line">18</span> # Custom colormap from green to red
+<span class="code-line">19</span> colors = [(0.2, 0.8, 0.2), (1.0, 1.0, 0.6), (0.8, 0.2, 0.2)]
+<span class="code-line">20</span> cm = LinearSegmentedColormap.from_list('my_custom_green_red', colors, N=100)
 <span class="code-line">21</span> 
-<span class="code-line">22</span> # Define the colors for the custom colormap (green to red)
-<span class="code-line">23</span> colors = [(0.2, 0.8, 0.2),  # Green
-<span class="code-line">24</span>           (1.0, 1.0, 0.6),  # Yellow
-<span class="code-line">25</span>           (0.8, 0.2, 0.2)]  # Red
-<span class="code-line">26</span> 
-<span class="code-line">27</span> n_bins = 100  
-<span class="code-line">28</span> 
-<span class="code-line">29</span> # Create the colormap
-<span class="code-line">30</span> cmap_name = 'my_custom_green_red'
-<span class="code-line">31</span> cm = LinearSegmentedColormap.from_list(cmap_name, colors, N=n_bins)
-<span class="code-line">32</span> 
-<span class="code-line">33</span> calplot.calplot(events, cmap=cm, colorbar=True, edgecolor='black', linewidth=1)
-<span class="code-line">34</span> plt.show()
+<span class="code-line">22</span> # Plot the calendar heatmap
+<span class="code-line">23</span> calplot.calplot(events, cmap=cm, colorbar=True, edgecolor='black', linewidth=1)
+<span class="code-line">24</span> plt.show()
     </code></pre>
   </figure>
 </div>
