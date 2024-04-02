@@ -37,7 +37,7 @@ slug: /code
     left: 5px; /* Adjusted to reduce distance from the edge */
     width: 30px; /* Adjust width as needed */
     text-align: right;
-    color: black; /* Line number color */
+    color: gray; /* Line number color */
     font-size: 12px; /* Adjust font size to match code size */
     padding-right: 5px; /* Adjusted to reduce distance from code */
     pointer-events: none; /* Ensures line numbers do not interfere with text selection */
