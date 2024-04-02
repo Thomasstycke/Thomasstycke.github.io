@@ -19,7 +19,7 @@ Throughout this 15-year period, the average daily count of reported assaults hov
 
 
 <p style="text-align: justify; text-justify: inter-word;">
-If you were planning to celebrate New Year's Eve in San Francisco, it's crucial to know which areas might be safer than others. To provide insights, we investigated the top 7 locations where people gather to watch fireworks and mapped them out <a href="#ref1">[1]</a>. Our goal was to determine if these popular spots correlate with higher rates of assault incidents, as large crowds often attract incidents.
+If you were planning to celebrate New Year's Eve in San Francisco, it's crucial to know which areas might be safer than others. To provide insights, we investigated the top 7 locations where people gather to watch fireworks and mapped them out <a href="#ref1">[1]</a>. The goal was to determine if these popular spots correlate with higher rates of assault incidents, as large crowds often attract incidents.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
