@@ -50,7 +50,7 @@ In conclusion, understanding the distribution of assault incidents relative to p
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in whcih the crime was recorded.  <a href="#figure3">Figure 3</a> shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
+To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in which the crime was recorded.  <a href="#figure3">Figure 3</a> shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
 </p>
 
 <figure id="figure3">
