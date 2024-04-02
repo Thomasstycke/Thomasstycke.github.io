@@ -23,7 +23,7 @@ If you were planning to celebrate New Year's Eve in San Francisco, it's crucial 
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
- <a href="#figure2">Figure 2</a> shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
+ <a href="#figure2">Figure 2</a> shows a map of San Francisco and its ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
@@ -31,7 +31,7 @@ Tenderloin emerges as the district with the highest recorded assaults per 10,000
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.<br>
+Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.<br><br>
 Treasure Island's inclusion in the Southern district may give the impression of high crime rates on January 1st. However, this perception is misleading, as only one assault was recorded through 15 years in Treasure Island, making it seem like a quite safe place to be.
 </p>
 
