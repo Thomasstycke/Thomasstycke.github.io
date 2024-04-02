@@ -5,16 +5,20 @@ slug: /code
 ---
 
 <style>
-  .code-block {
+  .code-block-container {
     text-align: center; /* Center the box */
     margin-left: -25%; /* Offset the box to the left */
     margin-right: -25%; /* Offset the box to the right */
   }
 
+  .code-block {
+    position: relative; /* Added to allow absolute positioning of the text */
+  }
+
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    width: 100%; 
+    width: 100%; /* Make the box 150% wider */
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
@@ -50,13 +54,18 @@ slug: /code
   .code-block figcaption {
     display: none; /* Hide the caption */
   }
+
+  .code-text {
+    position: absolute;
+    left: -25%; /* Align -25% to the left */
+    top: -30px; /* Adjust as needed */
+  }
 </style>
 
 <div class="code-block-container">
-  <p>Here is the code for all our plots.</p>
   <div class="code-block">
+    <p class="code-text">Figure 1:</p>
     <figure>
-      <figcaption>Figure 1:</figcaption>
       <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
