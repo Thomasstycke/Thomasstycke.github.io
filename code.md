@@ -10,6 +10,7 @@ slug: /code
     border-radius: 5px;
     margin-bottom: 20px;
     position: relative; /* Added to allow absolute positioning of line numbers */
+    width: 150%; /* Make the box 150% wider */
   }
 
   .code-block pre {
