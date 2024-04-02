@@ -30,6 +30,7 @@ slug: /code
     background-color: transparent; /* No background */
     font-size: 12px; /* Adjust font size to match line index size */
     line-height: 1.2; /* Adjust line height */
+    overflow-wrap: break-word; /* Break long lines */
   }
 
   .code-line {
