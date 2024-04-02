@@ -18,7 +18,7 @@ slug: /code
 
   .code-block pre {
     margin: 0;
-    padding-left: 40px; /* Added to accommodate line numbers */
+    padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
     position: relative; /* Added for absolute positioning of line numbers */
   }
 
@@ -28,15 +28,18 @@ slug: /code
     border-radius: 5px;
     color: black; /* Text color */
     background-color: transparent; /* No background */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.2; /* Adjust line height */
   }
 
   .code-line {
     position: absolute;
-    left: 0;
+    left: 5px; /* Adjusted to reduce distance from the edge */
     width: 30px; /* Adjust width as needed */
     text-align: right;
     color: black; /* Line number color */
-    padding-right: 10px;
+    font-size: 12px; /* Adjust font size */
+    padding-right: 5px; /* Adjusted to reduce distance from code */
     pointer-events: none; /* Ensures line numbers do not interfere with text selection */
   }
 </style>
