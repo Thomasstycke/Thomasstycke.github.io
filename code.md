@@ -68,7 +68,7 @@ slug: /code
 </style>
 
 <div class="code-block-container">
-  <p class="code-description">Here is our code for all our figures:</p>
+  <b class="code-description">  Here is our code for all our figures: </b>
   <div class="code-block">
     <p class="code-text">Figure 1:</p>
     <figure>
