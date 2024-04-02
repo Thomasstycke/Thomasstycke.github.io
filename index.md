@@ -78,3 +78,45 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
     <li id="ref3"><a href="https://en.wikipedia.org/wiki/Tenderloin,_San_Francisco">Tenderloin, San Francisco</a>. Wikipedia.</li>
 </ol>
 
+<head>
+    <title>Contribution Matrix</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Contribution Matrix</h2>
+
+<table>
+    <tr>
+        <th>Contribution</th>
+        <th>Thomas</th>
+        <th>Anna</th>
+    </tr>
+    <tr>
+        <td>Figures</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+    <tr>
+        <td>Site</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+    <tr>
+        <td>Text</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+</table>
+
+</body>
