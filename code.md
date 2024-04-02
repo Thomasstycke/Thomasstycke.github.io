@@ -20,6 +20,7 @@ slug: /code
     margin: 0;
     padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
     position: relative; /* Added for absolute positioning of line numbers */
+    white-space: pre-wrap; /* Allow long lines to break and wrap */
   }
 
   .code-block code {
@@ -30,7 +31,6 @@ slug: /code
     background-color: transparent; /* No background */
     font-size: 12px; /* Adjust font size to match line index size */
     line-height: 1.2; /* Adjust line height */
-    overflow-wrap: break-word; /* Break long lines */
   }
 
   .code-line {
