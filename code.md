@@ -271,3 +271,85 @@ slug: /code
     </figure>
   </div>
 </div>
+
+<h2 class="code-heading">Figure 1:</h2>
+
+<div class="code-block-container">
+  <div class="code-block">
+    <figure>
+      <pre><code class="python">
+<span class="code-line">1</span> import pandas as pd
+<span class="code-line">2</span> from bokeh.models import ColumnDataSource, HoverTool, Legend
+<span class="code-line">3</span> from bokeh.plotting import figure, show, output_file
+<span class="code-line">4</span> from bokeh.transform import factor_cmap
+<span class="code-line">5</span> 
+<span class="code-line">6</span> # Load and prepare the data
+<span class="code-line">7</span> path = '/Users/thomasstycke/Desktop/DTU/SocialData/Police_Department_Incident_Reports__Historical_2003_to_May_2018_20240130.csv'
+<span class="code-line">8</span> df = pd.read_csv(path, parse_dates=['Date'])
+<span class="code-line">9</span> df['Hour'] = pd.to_datetime(df['Time'], format='%H:%M').dt.hour
+<span class="code-line">10</span> 
+<span class="code-line">11</span> # Separate filters for December 31 and January 1
+<span class="code-line">12</span> dec_31 = df[(df['Date'].dt.month == 12) & (df['Date'].dt.day == 31)]
+<span class="code-line">13</span> jan_1 = df[(df['Date'].dt.month == 1) & (df['Date'].dt.day == 1)]
+<span class="code-line">14</span> jan_1['Hour'] += 24  # Adjust January 1st hours
+<span class="code-line">15</span> 
+<span class="code-line">16</span> # Concatenate the adjusted dataframes
+<span class="code-line">17</span> df_adjusted = pd.concat([dec_31, jan_1])
+<span class="code-line">18</span> 
+<span class="code-line">19</span> # Group the data by the adjusted hour and police district
+<span class="code-line">20</span> grouped_data = df_adjusted.groupby(['Hour', 'PdDistrict']).size().reset_index(name='Count')
+<span class="code-line">21</span> 
+<span class="code-line">22</span> # Convert grouped data to a ColumnDataSource
+<span class="code-line">23</span> source = ColumnDataSource(grouped_data)
+<span class="code-line">24</span> 
+<span class="code-line">25</span> # Define the color palette
+<span class="code-line">26</span> custom_palette = [
+<span class="code-line">27</span>     '#a50026',   # Dark Red-Orange
+<span class="code-line">28</span>     '#d73027',   # Red-Orange
+<span class="code-line">29</span>     '#f46d43',   # Orange
+<span class="code-line">30</span>     '#fdae61',   # Light Orange
+<span class="code-line">31</span>     '#fee08b',   # Pale Yellow
+<span class="code-line">32</span>     '#d9ef8b',   # Pale Green
+<span class="code-line">33</span>     '#a6d96a',   # Lighter Green
+<span class="code-line">34</span>     '#66bd63',   # Light Green
+<span class="code-line">35</span>     '#1a9850',   # Green
+<span class="code-line">36</span>     '#006837'    # Dark Green
+<span class="code-line">37</span> ]
+<span class="code-line">38</span> 
+<span class="code-line">39</span> # Get unique districts
+<span class="code-line">40</span> districts =  ['TENDERLOIN', 'SOUTHERN','CENTRAL', 'MISSION', 'BAYVIEW', 'NORTHERN',  'INGLESIDE', 'PARK', 'TARAVAL', 'RICHMOND']
+<span class="code-line">41</span> 
+<span class="code-line">42</span> # Define the figure
+<span class="code-line">43</span> p = figure(title='Count by District and Hour (Dec 31 - Jan 1)',
+<span class="code-line">44</span>            x_axis_label='Hour of Day (Dec 31 - Jan 1)',
+<span class="code-line">45</span>            y_axis_label='Count',
+<span class="code-line">46</span>            tools="pan,wheel_zoom,box_zoom,reset",
+<span class="code-line">47</span>            x_range=(0, 47),
+<span class="code-line">48</span>            y_range=(0, 400))
+<span class="code-line">49</span> 
+<span class="code-line">50</span> # Add hover tool
+<span class="code-line">51</span> hover = HoverTool(tooltips=[("Hour", "@Hour"), ("District", "@PdDistrict"), ("Count", "@Count")])
+<span class="code-line">52</span> p.add_tools(hover)
+<span class="code-line">53</span> 
+<span class="code-line">54</span> # Plot configuration
+<span class="code-line">55</span> for i, district in enumerate(districts):
+<span class="code-line">56</span>     district_data = grouped_data[grouped_data['PdDistrict'] == district]
+<span class="code-line">57</span>     p.vbar(x='Hour', top='Count', width=0.9, source=ColumnDataSource(district_data),
+<span class="code-line">58</span>            color=custom_palette[i % len(custom_palette)], legend_label=district, alpha=0.7)
+<span class="code-line">59</span> 
+<span class="code-line">60</span> # Customize legend
+<span class="code-line">61</span> p.legend.location = "top_right"
+<span class="code-line">62</span> p.legend.title = "District"
+<span class="code-line">63</span> p.legend.click_policy = "hide"
+<span class="code-line">64</span> 
+<span class="code-line">65</span> # Set specific x-axis ticks
+<span class="code-line">66</span> p.xaxis.ticker = [0, 12, 24, 36, 48]
+<span class="code-line">67</span> 
+<span class="code-line">68</span> html_file_path = '/Users/thomasstycke/thomasstycke_site/_includes/bokeh_plot.html'
+<span class="code-line">69</span> output_file(html_file_path)
+<span class="code-line">70</span> 
+<span class="code-line">71</span> show(p)
+      </code></pre>
+    </figure>
+  </div>
+</div>
