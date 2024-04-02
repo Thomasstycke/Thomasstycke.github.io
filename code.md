@@ -67,8 +67,12 @@ slug: /code
   }
 </style>
 
+<p style="text-align: justify; text-justify: inter-word;">
+Here is our code for all our figures:
+</p>
+
 <div class="code-block-container">
-  <b class="code-description">  Here is our code for all our figures: </b>
+  <b class="code-description">  Figure 1: </b>
   <div class="code-block">
     <p class="code-text">Figure 1:</p>
     <figure>
