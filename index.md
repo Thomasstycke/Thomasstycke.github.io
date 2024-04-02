@@ -79,22 +79,24 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
 </ol>
 
 <head>
-    <title>Contribution</title>
-    <style>
-        table {
-            width: 80%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            text-align: center;
-            padding: 8px;
-        }
-    </style>
+  <title>Contribution</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+  </style>
 </head>
 <body>
 
-<h2>Contribution Matrix</h2>
+<h2>Contribution</h2>
 
 <table>
     <tr>
