@@ -172,7 +172,7 @@ slug: /code
 <span class="code-line">54</span>                            hover_data={'Count': True})  
 <span class="code-line">55</span> 
 <span class="code-line">56</span> # Update the hover template and layout
-<span class="code-line">57</span> fig.update_traces(hovertemplate='<b>%{location}</b><br>Total Count: %{customdata[0]}<br>Incidents per 10.000 Residents: %{z}')
+<span class="code-line">57</span> fig.update_traces(hovertemplate='<b>%{location}</b> Total Count: %{customdata[0]} Incidents per 10.000 Residents: %{z}')
 <span class="code-line">58</span> fig.update_layout(hoverlabel=dict(bgcolor="white", font_size=16, font_family="Rockwell"))
 <span class="code-line">59</span> fig.update_layout(
 <span class="code-line">60</span>     coloraxis_colorbar=dict(
