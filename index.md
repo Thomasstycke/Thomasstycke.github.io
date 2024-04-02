@@ -73,6 +73,10 @@ All districts show a peak in reports at noon (12:00), which may be somewhat unex
 Since the plot displays all 24 hours from December 31st it reveals a strong contrast between midnight on December 31st and midnight on January 1st. Similarly, a notable difference can be observed when comparing the late hours of January 1st with those of December 31st. This observation highlights the uniqueness of New Year’s Eve's activities and their impact on public safety.
 </p>
 
+<p style="text-align: justify; text-justify: inter-word;">
+In conclusion, as San Francisco celebrates New Year's Eve with fireworks lighting up the night sky, an underlying trend of increasing assault incidents around midnight comes to light. However, an analysis of assaults near popular fireworks locations does not reveal a consistent trend, suggesting these gatherings themselves do not significantly elevate the risk. On the other hand, spending New Year's Eve in or near the Tenderloin district does present a higher risk, as this area is known for its elevated assault incidents. Choosing where to celebrate could potentially influence the safety and enjoyment of your New Year's Eve experience in the city.
+</p>
+
 <ol>
     <li id="ref1"><a href="https://www.hindustantimes.com/world-news/new-years-eve-fireworks-in-san-francisco-top-7-spots-to-ring-in-2024-celebrations-101704006372655-amp.html">New Year's Eve fireworks in San Francisco: Top 7 spots to ring in 2024</a>. Hindustan Times.</li>
     <li id="ref2"><a href="https://www.prisonpolicy.org/origin/ca/2020/sanfrancisco_police.html">SFPD Disrict Residents</a>. Prison Policy Initiative.</li>
