@@ -59,13 +59,19 @@ slug: /code
     text-align: left; /* Align left */
     margin-bottom: 10px; /* Add margin below the description */
   }
+
+  .code-text {
+    position: relative;
+    text-align: left;
+    margin-left: -25%; /* Offset to the left */
+  }
 </style>
 
 <p class="code-description">Here is our code for all our figures:</p>
 <div class="code-block-container">
+  <div class="code-text"><b>Figure 1:</b></div>
   <div class="code-block">
     <figure>
-      <div class="code-text"><b>Figure 1:</b></div>
       <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
