@@ -97,15 +97,16 @@ Given these insights, how will you choose where to celebrate? Selecting your loc
       margin-right: auto;
     }
     th, td {
-      border: 2px solid black;
+      border: 2px solid #828282; /* Updated border color to gray */
       text-align: center;
       padding: 8px;
+      color: #828282; /* Added text color to gray */
     }
   </style>
 </head>
 <body>
 
-<h2>Contribution</h2>
+<h2 style="color: #828282;">Contribution</h2> <!-- Optional: Updated heading color to gray -->
 
 <table>
     <tr>
