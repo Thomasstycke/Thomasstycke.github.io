@@ -31,11 +31,13 @@ Tenderloin emerges as the district with the highest recorded assaults per 10,000
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, the analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.
+Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.
+<br>
+Treasure Island's inclusion in the Southern district may give the impression of high crime rates on January 1st. However, this perception is misleading, as only one assault was recorded through 15 years in Treasure Island, making it seem like a quite safe place to be.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Central district ranks third in terms of assault incidents per 10,000 residents. Notably, our analysis reveals a concerning trend: both Southern and Central district have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
+Central district ranks third in terms of assault incidents per 10,000 residents. Notably, the analysis reveals a concerning trend: both Southern and Central districts have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
@@ -45,7 +47,7 @@ In conclusion, while the choice of fireworks viewing spots may not significantly
 <figure id="figure2"> 
   {% include map.html %}
   <figcaption style="text-align: justify;">
-    <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
+    <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police district. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
   </figcaption>
 </figure>
 
