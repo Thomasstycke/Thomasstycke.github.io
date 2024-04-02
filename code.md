@@ -28,7 +28,7 @@ slug: /code
     border-radius: 5px;
     color: black; /* Text color */
     background-color: transparent; /* No background */
-    font-size: 14px; /* Adjust font size */
+    font-size: 12px; /* Adjust font size to match line index size */
     line-height: 1.2; /* Adjust line height */
   }
 
@@ -38,7 +38,7 @@ slug: /code
     width: 30px; /* Adjust width as needed */
     text-align: right;
     color: black; /* Line number color */
-    font-size: 12px; /* Adjust font size */
+    font-size: 12px; /* Adjust font size to match code size */
     padding-right: 5px; /* Adjusted to reduce distance from code */
     pointer-events: none; /* Ensures line numbers do not interfere with text selection */
   }
