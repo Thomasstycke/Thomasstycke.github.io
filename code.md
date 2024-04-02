@@ -4,10 +4,13 @@ title: Code
 slug: /code
 ---
 
-{% highlight python linenos %}
-# Your Python code goes here
-def hello_world():
-    print("Hello, world!")
-    
-hello_world()
-{% endhighlight %}
+<figure>
+  <figcaption>Figure 1: Python Code</figcaption>
+  {% highlight python %}
+  # Your Python code goes here
+  def hello_world():
+      print("Hello, world!")
+
+  hello_world()
+  {% endhighlight %}
+</figure>
