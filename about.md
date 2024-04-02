@@ -15,5 +15,16 @@ items:
     description: Mathematics and Technology, DTU, 6. semester 
 ---
 
+<style>
+    .about-item {
+        margin-bottom: 20px; /* Adjust the space between items */
+    }
+    
+    .about-item img {
+        max-width: 150px; /* Adjust the maximum width of the images */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+
 <br />
 <br />
