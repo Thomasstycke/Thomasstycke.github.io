@@ -272,7 +272,7 @@ slug: /code
   </div>
 </div>
 
-<h2 class="code-heading">Figure 1:</h2>
+<h2 class="code-heading">Figure 3:</h2>
 
 <div class="code-block-container">
   <div class="code-block">
