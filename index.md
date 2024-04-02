@@ -57,7 +57,7 @@ To get a better insight into what time of day the incidents happen, we've plotte
 <figure id="figure3">
   {% include cleaned_bokeh_plot.html %}
   <figcaption style="text-align: justify;">
-  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down.
+  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down. The legend with different districts is interactive making it possible to choose which district to display. 
   </figcaption>
 </figure>
 
