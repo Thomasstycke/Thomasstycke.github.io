@@ -55,27 +55,17 @@ slug: /code
     display: none; /* Hide the caption */
   }
 
-  .code-text {
-    position: relative;
-    left: -25%; /* Align -25% to the left */
-    top: -30px; /* Adjust as needed */
-    font-weight: bold; /* Make the text bold */
-    text-align: left; /* Align left */
-  }
-
   .code-description {
     text-align: left; /* Align left */
+    margin-bottom: 10px; /* Add margin below the description */
   }
 </style>
 
-<p style="text-align: justify; text-justify: inter-word;">
-Here is our code for all our figures:
-</p>
-
+<p class="code-description">Here is our code for all our figures:</p>
 <div class="code-block-container">
-  <div class="code-text"><b>Figure 1:</b></div>
   <div class="code-block">
     <figure>
+      <div class="code-text"><b>Figure 1:</b></div>
       <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
