@@ -88,7 +88,7 @@ Given these insights, how will you choose where to celebrate? Selecting your loc
 </ol>
 
 <head>
-  <title>Contribution</title>
+  <title>Contributions</title>
   <style>
     table {
       width: 80%;
