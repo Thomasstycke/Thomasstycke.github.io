@@ -14,7 +14,7 @@ slug: /code
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    width: 150%; /* Make the box 150% wider */
+    width: 100%; /* Make the box 150% wider */
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
