@@ -79,10 +79,10 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
 </ol>
 
 <head>
-    <title>Contribution Matrix</title>
+    <title>Contribution</title>
     <style>
         table {
-            width: 100%;
+            width: 80%;
             border-collapse: collapse;
         }
         th, td {
@@ -100,7 +100,7 @@ Since the plot displays all 24 hours from December 31st it reveals a strong cont
     <tr>
         <th>Contribution</th>
         <th>Thomas</th>
-        <th>Anna</th>
+        <th>Anna-Sofie</th>
     </tr>
     <tr>
         <td>Figures</td>
