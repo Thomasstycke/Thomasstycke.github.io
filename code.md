@@ -75,7 +75,7 @@ slug: /code
 
 <p class="code-description">Here is our code for all our figures:</p>
 
-<h4 class="code-heading">Figure 1:</h4>
+<h2 class="code-heading">Figure 1:</h2>
 
 <div class="code-block-container">
   <div class="code-block">
