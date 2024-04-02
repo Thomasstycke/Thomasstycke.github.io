@@ -74,7 +74,6 @@ Here is our code for all our figures:
 <div class="code-block-container">
   <b class="code-description">Figure 1:</b>
   <div class="code-block">
-    <p class="code-text">Figure 1:</p>
     <figure>
       <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
