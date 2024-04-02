@@ -1,5 +1,7 @@
 ---
-layout: Code
+layout: blog
+title: Blog
+slug: /blog
 ---
 
 <p style="text-align: justify; text-justify: inter-word;">
