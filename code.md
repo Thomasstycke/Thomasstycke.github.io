@@ -48,11 +48,40 @@ slug: /code
   <figure>
     <figcaption>Figure 1: Python Code</figcaption>
     <pre><code class="python">
-    <span class="code-line">1</span> # Your Python code goes here
-    <span class="code-line">2</span> def hello_world():
-    <span class="code-line">3</span>     print("Hello, world!")
-    <span class="code-line">4</span> 
-    <span class="code-line">5</span> hello_world()
+import pandas as pd
+import calplot
+
+# Read the dataset
+path = '/Users/thomasstycke/Desktop/DTU/SocialData/Police_Department_Incident_Reports__Historical_2003_to_May_2018_20240130.csv'
+data = pd.read_csv(path)
+data = data[~data['Date'].str.contains('2018')]
+
+# Filter the data for the 'ASSAULT' category
+assault_data = data[data["Category"] == 'ASSAULT']
+
+# Convert the 'Date' column to datetime format
+assault_data['Date'] = pd.to_datetime(assault_data['Date'], format='%m/%d/%Y')
+
+all_days = pd.date_range(assault_data['Date'].min(), assault_data['Date'].max(), freq='D')
+days = len(all_days)
+events = pd.Series(1, index=assault_data['Date'])
+
+import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+
+# Define the colors for the custom colormap (green to red)
+colors = [(0.2, 0.8, 0.2),  # A cooler green
+          (1.0, 1.0, 0.6),  # A cooler yellow
+          (0.8, 0.2, 0.2)]  # A cooler red
+
+n_bins = 100  
+
+# Create the colormap
+cmap_name = 'my_custom_green_red'
+cm = LinearSegmentedColormap.from_list(cmap_name, colors, N=n_bins)
+
+calplot.calplot(events, cmap=cm, colorbar=True, edgecolor='black', linewidth=1)
+plt.show()
     </code></pre>
   </figure>
 </div>
