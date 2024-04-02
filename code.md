@@ -14,7 +14,7 @@ slug: /code
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    width: 100%; /* Make the box 150% wider */
+    width: 100%; 
     position: relative; /* Added to allow absolute positioning of line numbers */
   }
 
@@ -23,6 +23,7 @@ slug: /code
     padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
     position: relative; /* Added for absolute positioning of line numbers */
     white-space: pre-wrap; /* Allow long lines to break and wrap */
+    text-align: left; /* Align code text to the left */
   }
 
   .code-block code {
