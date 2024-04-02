@@ -7,12 +7,13 @@ slug: /code
 <style>
   .code-block {
     text-align: center; /* Center the box */
+    margin-left: -25%; /* Offset the box to the left */
+    margin-right: -25%; /* Offset the box to the right */
   }
 
   .code-block figure {
     border: 2px solid black; /* Black border */
     border-radius: 5px;
-    margin: 0 auto; /* Center the box */
     width: 150%; /* Make the box 150% wider */
     position: relative; /* Added to allow absolute positioning of line numbers */
   }

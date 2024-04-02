@@ -1,93 +1,125 @@
 ---
-layout: code
-title: Code
-slug: /code
+layout: home
 ---
 
-<style>
-  .code-block {
-    text-align: center; /* Center the box */
-    margin-left: -25%; /* Offset the box to the left */
-    margin-right: -25%; /* Offset the box to the right */
-  }
+<h2>New Year, Same Story: San Fransisco's Assaults Renewed</h2>
 
-  .code-block figure {
-    border: 2px solid black; /* Black border */
-    border-radius: 5px;
-    width: 150%; /* Make the box 150% wider */
-    position: relative; /* Added to allow absolute positioning of line numbers */
-  }
+<b style="text-align: justify; text-justify: inter-word;">
+A comprehensive dataset spanning from January 2003 to December 2017, detailing incidents recorded by the San Francisco Police Department, uncovers a troubling trend. Among the various crimes recorded, one stands out: assaults.
+</b>
 
-  .code-block pre {
-    margin: 0;
-    padding-left: 35px; /* Adjusted to reduce space between line numbers and code */
-    position: relative; /* Added for absolute positioning of line numbers */
-    white-space: pre-wrap; /* Allow long lines to break and wrap */
-  }
+<p style="text-align: justify; text-justify: inter-word;">
+Throughout this 15-year period, the average daily count of reported assaults hovered between 28 and 32. However, an alarming deviation is consistently observed on the first day of each new year. On January 1st each year, the number of reported assault incidents spike remarkably, with reported cases ranging from 47 and 80, averaging out to 56 reported assaults - which is significantly higher than the daily average! This trend becomes evident when reviewing the calendar plot illustrating recorded assault crimes from 2003 to 2017 (See <a href="#figure1">Figure 1</a>). On some days throughout the different years, there is also a high incident count, but no clear pattern emerges as it does with January 1st. In some years, December 31st also exhibits a high count of incidents, which might be attributed to whether officers 'round up' the documentation clock-time to 00:00, or perhaps due to some officers having a shift change around this hour. This rounding up or shift change could influence whether an incident is recorded as belonging to January 1st or December 31st, providing a possible explanation for the fluctuation in incident counts on these dates.
+</p>
 
-  .code-block code {
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    color: black; /* Text color */
-    background-color: transparent; /* No background */
-    font-size: 12px; /* Adjust font size to match line index size */
-    line-height: 1.2; /* Adjust line height */
-  }
+<figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
+  <img src="/assets/img/calendar_plot.png" alt="Descriptive Alt Text" style="width: 100%;">
+  <figcaption style="text-align: justify;"><b>Figure 1:</b> A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
+</figure>
 
-  .code-line {
-    position: absolute;
-    left: 5px; /* Adjusted to reduce distance from the edge */
-    width: 30px; /* Adjust width as needed */
-    text-align: right;
-    color: gray; /* Line number color */
-    font-size: 12px; /* Adjust font size to match code size */
-    padding-right: 5px; /* Adjusted to reduce distance from code */
-    pointer-events: none; /* Ensures line numbers do not interfere with text selection */
-  }
 
-  .code-block figcaption {
-    display: none; /* Hide the caption */
-  }
-</style>
+<p style="text-align: justify; text-justify: inter-word;">
+If you were planning to celebrate New Year's Eve in San Francisco, it's crucial to know which areas might be safer than others. To provide insights, we investigated the top 7 locations where people gather to watch fireworks and mapped them out <a href="#ref1">[1]</a>. The goal was to determine if these popular spots correlate with higher rates of assault incidents, as large crowds often attract incidents.
+</p>
 
-<div class="code-block">
-  <figure>
-    <pre><code class="python">
-<span class="code-line">1</span> import pandas as pd
-<span class="code-line">2</span> import calplot
-<span class="code-line">3</span> 
-<span class="code-line">4</span> # Read the dataset
-<span class="code-line">5</span> path = '/Users/thomasstycke/Desktop/DTU/SocialData/Police_Department_Incident_Reports__Historical_2003_to_May_2018_20240130.csv'
-<span class="code-line">6</span> data = pd.read_csv(path)
-<span class="code-line">7</span> data = data[~data['Date'].str.contains('2018')]
-<span class="code-line">8</span> 
-<span class="code-line">9</span> # Filter the data for the 'ASSAULT' category
-<span class="code-line">10</span> assault_data = data[data["Category"] == 'ASSAULT']
-<span class="code-line">11</span> 
-<span class="code-line">12</span> # Convert the 'Date' column to datetime format
-<span class="code-line">13</span> assault_data['Date'] = pd.to_datetime(assault_data['Date'], format='%m/%d/%Y')
-<span class="code-line">14</span> 
-<span class="code-line">15</span> all_days = pd.date_range(assault_data['Date'].min(), assault_data['Date'].max(), freq='D')
-<span class="code-line">16</span> days = len(all_days)
-<span class="code-line">17</span> events = pd.Series(1, index=assault_data['Date'])
-<span class="code-line">18</span> 
-<span class="code-line">19</span> import matplotlib.pyplot as plt
-<span class="code-line">20</span> from matplotlib.colors import LinearSegmentedColormap
-<span class="code-line">21</span> 
-<span class="code-line">22</span> # Define the colors for the custom colormap (green to red)
-<span class="code-line">23</span> colors = [(0.2, 0.8, 0.2),  # Green
-<span class="code-line">24</span>           (1.0, 1.0, 0.6),  # Yellow
-<span class="code-line">25</span>           (0.8, 0.2, 0.2)]  # Red
-<span class="code-line">26</span> 
-<span class="code-line">27</span> n_bins = 100  
-<span class="code-line">28</span> 
-<span class="code-line">29</span> # Create the colormap
-<span class="code-line">30</span> cmap_name = 'my_custom_green_red'
-<span class="code-line">31</span> cm = LinearSegmentedColormap.from_list(cmap_name, colors, N=n_bins)
-<span class="code-line">32</span> 
-<span class="code-line">33</span> calplot.calplot(events, cmap=cm, colorbar=True, edgecolor='black', linewidth=1)
-<span class="code-line">34</span> plt.show()
-    </code></pre>
-  </figure>
-</div>
+<p style="text-align: justify; text-justify: inter-word;">
+ <a href="#figure2">Figure 2</a> shows a map of San Fransisco and its' ten police districts where each district is described with its count of recorded assault crimes per 10,000 residents. The information about residents in each district was gathered from <a href="#ref2">[2]</a>.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Tenderloin emerges as the district with the highest recorded assaults per 10,000 residents, which aligns with its reputation as a high-crime neighborhood <a href="#ref3">[3]</a>. A closer look reveals that Tenderloin had a total of 88 recorded assault incidents, surpassing other districts such as Richmond, Taraval, Park, Ingleside, and Bayview.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.<br>
+Treasure Island's inclusion in the Southern district may give the impression of high crime rates on January 1st. However, this perception is misleading, as only one assault was recorded through 15 years in Treasure Island, making it seem like a quite safe place to be.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Central district ranks third in terms of assault incidents per 10,000 residents. Notably, the analysis reveals a concerning trend: both Southern and Central districts have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+In conclusion, while the choice of fireworks viewing spots may not significantly impact safety, it remains wise to avoid places that are close to known high-crime neighborhoods, especially Tenderloin.
+</p>
+
+<figure id="figure2"> 
+  {% include map.html %}
+  <figcaption style="text-align: justify;">
+    <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
+  </figcaption>
+</figure>
+
+<p style="text-align: justify; text-justify: inter-word;">
+To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in which the crime was recorded.  <a href="#figure3">Figure 3</a> shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
+</p>
+
+<figure id="figure3">
+  {% include cleaned_bokeh_plot.html %}
+  <figcaption style="text-align: justify;">
+  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down.
+  </figcaption>
+</figure>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Notably, there is a marked increase in assault reports precisely at midnight (00:00 1st of January) spanning across multiple districts. This surge aligns with the anticipated pattern for New Year’s Eve, as it's a time commonly associated with large public gatherings and festivities. Unfortunately, such occasions can also escalate into conflicts and instances of criminal behavior.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+All districts show a peak in reports at noon (12:00), which may be somewhat unexpected for assault cases and could be less about the incidence of assaults and more related to administrative activities within the police force. Since this is a time when shift changes often happen and lunch breaks are common, incidents that occurred earlier might be logged at noon, even though they weren't reported immediately. This suggests it's more of a procedural issue than a genuine increase in assault frequency.
+</p>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Since the plot displays all 24 hours from December 31st it reveals a strong contrast between midnight on December 31st and midnight on January 1st. Similarly, a notable difference can be observed when comparing the late hours of January 1st with those of December 31st. This observation highlights the uniqueness of New Year’s Eve's activities and their impact on public safety.
+</p>
+
+<ol>
+    <li id="ref1"><a href="https://www.hindustantimes.com/world-news/new-years-eve-fireworks-in-san-francisco-top-7-spots-to-ring-in-2024-celebrations-101704006372655-amp.html">New Year's Eve fireworks in San Francisco: Top 7 spots to ring in 2024</a>. Hindustan Times.</li>
+    <li id="ref2"><a href="https://www.prisonpolicy.org/origin/ca/2020/sanfrancisco_police.html">SFPD Disrict Residents</a>. Prison Policy Initiative.</li>
+    <li id="ref3"><a href="https://en.wikipedia.org/wiki/Tenderloin,_San_Francisco">Tenderloin, San Francisco</a>. Wikipedia.</li>
+</ol>
+
+<head>
+  <title>Contribution</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    th, td {
+      border: 2px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Contribution</h2>
+
+<table>
+    <tr>
+        <th>Contribution</th>
+        <th>Thomas</th>
+        <th>Anna-Sofie</th>
+    </tr>
+    <tr>
+        <td>Figures</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+    <tr>
+        <td>Site</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+    <tr>
+        <td>Text</td>
+        <td>50%</td>
+        <td>50%</td>
+    </tr>
+</table>
+
+</body>
