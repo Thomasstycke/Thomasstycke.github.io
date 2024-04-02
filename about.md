@@ -16,6 +16,11 @@ items:
 ---
 
 <style>
+    .about-title {
+        font-size: 24px; /* Adjust the font size of the title */
+        font-weight: bold; /* Optionally adjust font weight */
+    }
+    
     .about-item {
         margin-bottom: 20px; /* Adjust the space between items */
     }
