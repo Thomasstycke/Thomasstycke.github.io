@@ -52,9 +52,12 @@ slug: /code
   }
 </style>
 
-<div class="code-block">
-  <figure>
-    <pre><code class="python">
+<div class="code-block-container">
+  <p>Here is the code for all our plots.</p>
+  <div class="code-block">
+    <figure>
+      <figcaption>Figure 1:</figcaption>
+      <pre><code class="python">
 <span class="code-line">1</span> import pandas as pd
 <span class="code-line">2</span> import calplot
 <span class="code-line">3</span> import matplotlib.pyplot as plt
@@ -79,6 +82,7 @@ slug: /code
 <span class="code-line">22</span> # Plot the calendar heatmap
 <span class="code-line">23</span> calplot.calplot(events, cmap=cm, colorbar=True, edgecolor='black', linewidth=1)
 <span class="code-line">24</span> plt.show()
-    </code></pre>
-  </figure>
+      </code></pre>
+    </figure>
+  </div>
 </div>
