@@ -5,12 +5,12 @@ slug: /about
 items:
   - title: Thomas Stycke
     image:
-      src: /assets/img/work/water.png
+      src: /assets/img/about/man.png
       alt: water
     description: Mathematics and Technology, DTU, 6. semester 
   - title: Anna-Sofie Børrensen
     image:
-      src: /assets/img/work/sand.png
+      src: /assets/img/about/woman.png
       alt: sand
     description: Mathematics and Technology, DTU, 6. semester 
 ---
