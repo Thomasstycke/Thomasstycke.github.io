@@ -2,14 +2,14 @@
 layout: home
 ---
 
-<h2>New Year, Same Story: San Francisco's Assaults Renewed</h2>
+<h2>From Delicious to Dangerous: The Health Violation Crisis in NYC Eateries</h2>
 
 <b style="text-align: justify; text-justify: inter-word;">
-A comprehensive dataset spanning from January 2003 to December 2017, detailing incidents recorded by the San Francisco Police Department, uncovers a troubling trend. Among the various crimes recorded, one stands out: assaults.
+Thinking of dining out in New York City? Picking the perfect spot is more than just about taste—it’s about trust! We’re diving into a dataset describing NYC restaurant inspection results to uncover the connections between location, cuisine, brand, and health violations. Join us on a journey to discover the cleanest kitchens in the city, and make your next meal out a safe and satisfying one!
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Throughout this 15-year period, the average daily count of reported assaults hovered between 28 and 32. However, an alarming deviation is consistently observed on the first day of each new year. On January 1st each year, the number of reported assault incidents spike remarkably, with reported cases ranging from 47 and 80, averaging out to 56 reported assaults - which is significantly higher than the daily average! This trend becomes evident when reviewing the calendar plot illustrating recorded assault crimes from 2003 to 2017 (See <a href="#figure1">Figure 1</a>). On some days throughout the different years, there is also a high incident count, but no clear pattern emerges as it does with January 1st. In some years, December 31st also exhibits a high count of incidents, which might be attributed to whether officers 'round up' the documentation clock-time to 00:00, or perhaps due to some officers having a shift change around this hour. This rounding up or shift change could influence whether an incident is recorded as belonging to January 1st or December 31st, providing a possible explanation for the fluctuation in incident counts on these dates.
+Every restaurant in NYC has at least one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 28.752 inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes.. Based on the extent and frequency of these violations, restaurants are categorized as either in a critical or non-critical state.
 </p>
 
 <figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
