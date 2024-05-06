@@ -12,6 +12,20 @@ Thinking of dining out in New York City? Picking the perfect spot is more than j
 Every restaurant in NYC has at least one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 28.752 inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes.. Based on the extent and frequency of these violations, restaurants are categorized as either in a critical or non-critical state.
 </p>
 
+<p style="text-align: justify; text-justify: inter-word;">
+Before diving into the historical data, the focus will be on the most recent inspection results. This approach provides a current and relevant guide to the sanitary conditions of NYC restaurants.
+</p>
+
+<b style="text-align: justify; text-justify: inter-word;">
+So, what is the most common violation type in NYC?
+</b>
+
+<p style="text-align: justify; text-justify: inter-word;">
+Guided by the latest inspection data, let's explore the violation codes in detail. Each code signifies a distinct type of health infraction, grouped into seven categories that range from minor concerns like improper food storage to more critical issues such as unsanitary cooking conditions or pest presence. Figure 1 provides a clear view of the most common violation types in recent New York City inspections. It reveals that Facility Sanitation is overwhelmingly the most common violation, followed by Pest Control. Conversely. While Chemical Safety is the least frequent, with only 20 recorded instances - which is still 20 too many.
+</p>
+
+
+
 <figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
   <img src="/assets/img/calendar_plot.png" alt="Descriptive Alt Text" style="width: 100%;">
   <figcaption style="text-align: justify;"><b>Figure 1:</b> A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
