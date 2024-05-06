@@ -43,20 +43,7 @@ Considering a specific cuisine — Burger, Pizza or a Sandwich? The type of cuis
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Tenderloin emerges as the district with the highest recorded assaults per 10,000 residents, which aligns with its reputation as a high-crime neighborhood <a href="#ref3">[3]</a>. A closer look reveals that Tenderloin had a total of 88 recorded assault incidents, surpassing other districts such as Richmond, Taraval, Park, Ingleside, and Bayview.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-Southern district follows closely with the second-highest number of assault incidents per 10,000 residents. Interestingly, although it hosts two popular fireworks viewing spots, our analysis indicates that the incidents are not necessarily concentrated near these locations. Thus, the presence of fireworks viewing spots might not significantly influence assault crime rates in this district.<br><br>
-Treasure Island's inclusion in the Southern district may give the impression of high crime rates on January 1st. However, this perception is misleading, as only one assault was recorded through 15 years in Treasure Island, making it seem like a quite safe place to be.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-Central district ranks third in terms of assault incidents per 10,000 residents. Notably, the analysis reveals a concerning trend: both Southern and Central districts have a considerable number of recorded incidents near the "border" with Tenderloin. This finding strongly suggests that these areas, especially on New Year's Eve, warrant caution and avoidance.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-In conclusion, while the choice of fireworks viewing spots may not significantly impact safety, it remains wise to avoid places that are close to known high-crime neighborhoods, especially Tenderloin.
+Figure 2 reveals a trend of the distribution of the violation codes having the same hiarachy. This being, that all the violation codes are distributed somewhat the same; having the facility sanitation code being the most common, the Pest control the second and so on in all kitchens. Though, the figure tells us, that the Chemical Safety violation haven’t been reported in restaurants serving Sandwiches or Hotdogs.
 </p>
 
 <figure id="figure2"> 
@@ -66,8 +53,12 @@ In conclusion, while the choice of fireworks viewing spots may not significantly
   </figcaption>
 </figure>
 
+<b style="text-align: justify; text-justify: inter-word;">
+Hygiene Status
+</b>
+
 <p style="text-align: justify; text-justify: inter-word;">
-To get a better insight into what time of day the incidents happen, we've plotted all the hours from the 31st of December and the 1st of January and the district in which the crime was recorded.  <a href="#figure3">Figure 3</a> shows a detailed temporal analysis of assault incidents reported in various districts on the 31st of December and the 1st of January.
+The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
 </p>
 
 <figure id="figure3">
@@ -78,23 +69,15 @@ To get a better insight into what time of day the incidents happen, we've plotte
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Notably, there is a marked increase in assault reports precisely at midnight (00:00 1st of January) spanning across multiple districts. This surge aligns with the anticipated pattern for New Year’s Eve, as it's a time commonly associated with large public gatherings and festivities. Unfortunately, such occasions can also escalate into conflicts and instances of criminal behavior.
+Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
 </p>
 
-<p style="text-align: justify; text-justify: inter-word;">
-All districts show a peak in reports at noon (12:00), which may be somewhat unexpected for assault cases and could be less about the incidence of assaults and more related to administrative activities within the police force. Since this is a time when shift changes often happen and lunch breaks are common, incidents that occurred earlier might be logged at noon, even though they weren't reported immediately. This suggests it's more of a procedural issue than a genuine increase in assault frequency.
-</p>
+<b style="text-align: justify; text-justify: inter-word;">
+DBA
+</b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Since the plot displays all 24 hours from December 31st it reveals a strong contrast between midnight on December 31st and midnight on January 1st. Similarly, a notable difference can be observed when comparing the late hours of January 1st with those of December 31st. This observation highlights the uniqueness of New Year’s Eve's activities and their impact on public safety.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-In conclusion, as San Francisco celebrates New Year's Eve with fireworks lighting up the night sky, an underlying trend of increasing assault incidents around midnight comes to light. However, an analysis of assaults near popular fireworks locations does not reveal a consistent trend, suggesting these gatherings themselves do not significantly elevate the risk. On the other hand, spending New Year's Eve in or near the Tenderloin district does present a higher risk, as this area is known for its elevated assault incidents. 
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-Given these insights, how will you choose where to celebrate? Selecting your location could be the key to ensuring the safety and enjoyment of your New Year's Eve experience in the city. Stay safe and make informed choices to welcome the new year with peace and joy.
+Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category.
 </p>
 
 <ol>
