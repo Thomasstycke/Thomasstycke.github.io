@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Assignment 3 - Social Data Analysis and Visualization
+title: Final Project 3 - Social Data Analysis and Visualization
 description: >- # this means to ignore newlines until "baseurl:"
-  This is our page for Assigment 3 in Social Data Analysis and Visualization at DTU. 
+  This is our page for Final Project in Social Data Analysis and Visualization at DTU. 
   By Thomas Stycke s214742 & Anna-Sofie Bøgegaard Børresen s214715
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomasstycke.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
