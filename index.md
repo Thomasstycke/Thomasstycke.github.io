@@ -62,7 +62,30 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 </p>
 
 <figure id="figure3">
-  {% include map_selector.html %}
+  <select id="mapSelector" onchange="changeMap()">
+    <option value="choropleth_Asian.html">Asian</option>
+    <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
+    <option value="choropleth_Beverages & More.html">Beverages & More</option>
+    <option value="choropleth_Burgers.html">Burgers</option>
+    <option value="choropleth_Hotdogs.html">Hotdogs</option>
+    <option value="choropleth_Mexican.html">Mexican</option>
+    <option value="choropleth_Pizza.html">Pizza</option>
+    <option value="choropleth_Salads_Vegan.html">Salads/Vegan</option>
+    <option value="choropleth_Sandwiches.html">Sandwiches</option>
+    <option value="choropleth_Seafood.html">Seafood</option>
+  </select>
+
+  <iframe id="mapFrame" src="Choropleth_maps/choropleth_Asian.html" style="width: 100%; height: 600px;"></iframe>
+
+  <script>
+    function changeMap() {
+      var selector = document.getElementById('mapSelector');
+      var selectedMap = selector.value;
+      var frame = document.getElementById('mapFrame');
+      frame.src = "{{ site.baseurl }}/Choropleth_maps/" + selectedMap;
+    }
+  </script>
+
   <figcaption style="text-align: justify;">
     <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Select a category from the dropdown to view the map.
   </figcaption>
