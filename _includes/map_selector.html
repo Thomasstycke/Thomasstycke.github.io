@@ -1,24 +1,24 @@
 <!-- map_selector.html -->
 <select id="mapSelector" onchange="changeMap()">
-    <option value="choropleth_Asian">Asian</option>
-    <option value="choropleth_Bakery, Desserts & Snacks">Bakery, Desserts & Snacks</option>
-    <option value="choropleth_Beverages & More">Beverages & More</option>
-    <option value="choropleth_Burgers">Burgers</option>
-    <option value="choropleth_Hotdogs">Hotdogs</option>
-    <option value="choropleth_Mexican">Mexican</option>
-    <option value="choropleth_Pizza">Pizza</option>
-    <option value="choropleth_Salads_Vegan">Salads/Vegan</option>
-    <option value="choropleth_Sandwiches">Sandwiches</option>
-    <option value="choropleth_Seafood">Seafood</option>
+    <option value="choropleth_Asian.html">Asian</option>
+    <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
+    <option value="choropleth_Beverages & More.html">Beverages & More</option>
+    <option value="choropleth_Burgers.html">Burgers</option>
+    <option value="choropleth_Hotdogs.html">Hotdogs</option>
+    <option value="choropleth_Mexican.html">Mexican</option>
+    <option value="choropleth_Pizza.html">Pizza</option>
+    <option value="choropleth_Salads_Vegan.html">Salads/Vegan</option>
+    <option value="choropleth_Sandwiches.html">Sandwiches</option>
+    <option value="choropleth_Seafood.html">Seafood</option>
 </select>
 
-<iframe id="mapFrame" style="width: 100%; height: 600px;"></iframe>
+<iframe id="mapFrame" src="{{ 'choropleth_Asian.html' | prepend: site.baseurl }}" style="width: 100%; height: 600px;"></iframe>
 
 <script>
     function changeMap() {
         var selector = document.getElementById('mapSelector');
         var selectedMap = selector.value;
         var frame = document.getElementById('mapFrame');
-        frame.src = "{{ '/Choropleth_maps/' | prepend: site.baseurl }}" + selectedMap + ".html";
+        frame.src = "{{ site.baseurl }}" + "/_includes/Choropleth_maps/" + selectedMap; // Make sure this path is correct
     }
 </script>

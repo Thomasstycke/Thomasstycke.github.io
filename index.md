@@ -64,9 +64,10 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 <figure id="figure3">
   {% include map_selector.html %}
   <figcaption style="text-align: justify;">
-    <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Users can select different categories from the dropdown menu to view corresponding maps.
+    <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Select a category from the dropdown to view the map.
   </figcaption>
 </figure>
+
 
 <p style="text-align: justify; text-justify: inter-word;">
 Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
