@@ -61,30 +61,36 @@ Hygiene Status
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
 </p>
 
-<figure id="figure3">
-  <select id="mapSelector">
-    <option value="choropleth_Asian.html">Asian</option>
-    <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
-    <option value="choropleth_Beverages & More.html">Beverages & More</option>
-    <option value="choropleth_Burgers.html">Burgers</option>
-    <option value="choropleth_Hotdogs.html">Hotdogs</option>
-    <option value="choropleth_Mexican.html">Mexican</option>
-    <option value="choropleth_Pizza.html">Pizza</option>
-    <option value="choropleth_Salads\Vegan.html">Salads/Vegan</option>
-    <option value="choropleth_Sandwiches.html">Sandwiches</option>
-    <option value="choropleth_Seafood.html">Seafood</option>
-  </select>
-  <iframe id="mapFrame" src="/_includes/Choropleth_maps/choropleth_Asian.html" style="width: 100%; height: 600px;"></iframe>
-  <figcaption style="text-align: justify;">
-    <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Select a category from the dropdown to view the map.
-  </figcaption>
-</figure>
+<select id="mapDropdown">
+  <option value="">Select a map</option>
+  <option value="choropleth_Asian.html">Asian</option>
+  <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
+  <option value="choropleth_Beverages & More.html">Beverages & More</option>
+  <option value="choropleth_Burgers.html">Burgers</option>
+  <option value="choropleth_Hotdogs.html">Hotdogs</option>
+  <option value="choropleth_Mexican.html">Mexican</option>
+  <option value="choropleth_Pizza.html">Pizza</option>
+  <option value="choropleth_Salads\Vegan.html">Salads & Vegan</option>
+  <option value="choropleth_Sandwiches.html">Sandwiches</option>
+  <option value="choropleth_Seafood.html">Seafood</option>
+</select>
+
+<div id="mapContainer"></div>
 
 <script>
-  document.getElementById('mapSelector').addEventListener('change', function() {
-    var selectedMap = this.value;
-    document.getElementById('mapFrame').src = "/_includes/Choropleth_maps/" + selectedMap;
-  });
+document.getElementById('mapDropdown').addEventListener('change', function() {
+  var selectedMap = this.value;
+  if (selectedMap !== "") {
+    fetch(`/Choropleth_maps/${selectedMap}`)
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('mapContainer').innerHTML = html;
+      })
+      .catch(error => console.error('Error loading map:', error));
+  } else {
+    document.getElementById('mapContainer').innerHTML = ''; // Clear map if no option selected
+  }
+});
 </script>
 
 <p style="text-align: justify; text-justify: inter-word;">
