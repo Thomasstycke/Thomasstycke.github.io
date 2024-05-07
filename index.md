@@ -32,14 +32,15 @@ So, the violations that most possible to be occurring at a restaurant is regardi
 Let's take a closer look at the distribution of violation types across different groups with the following visualization:
 </p>
 
-<figure id="figure1" style="max-width: 30%; display: block; margin: 10px auto; margin-bottom: 0;"> <!-- Ensure no bottom margin on figure -->
-    <div style="transform: scale(0.6); transform-origin: top center;">
+<figure id="figure1" style="max-width: 30%; display: block; margin: 10px auto;">  <!-- Adjusted max-width to 30% assuming scale down to 60% -->
+    <div style="transform: scale(0.6); transform-origin: top center;"> <!-- Scale applied here -->
         {% include violation_group_distribution.html %}
     </div>
-    <figcaption style="text-align: center; width: 100%; display: block; margin-top: 0; margin-bottom: 0;"> <!-- Ensure no bottom margin on figcaption -->
+    <figcaption style="text-align: center; width: 100%; display: block; margin-top: 0;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
 
 
 <b style="text-align: justify; text-justify: inter-word;">
@@ -89,6 +90,7 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </p>
 
 <figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
+    <!-- The container where the selected HTML file will be displayed -->
     <div id="mapContainer">
         {% include choropleth_AVERAGESCOREASIAN.html %}
     </div>
@@ -97,32 +99,31 @@ Although there is no distinct pattern indicating higher risks associated with sp
     </figcaption>
 </figure>
 
-<!-- Buttons for each map -->
-<div style="text-align: center; margin-top: 20px;">
-    <button onclick="loadMap('choropleth_AVERAGESCOREASIAN.html')">Asian Cuisine</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREBAKERY.html')">Bakery</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREBEVERAGE.html')">Beverage</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREBURGER.html')">Burger</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREHOTDOG.html')">Hot Dog</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREMEXICAN.html')">Mexican Cuisine</button>
-    <button onclick="loadMap('choropleth_AVERAGESCOREPIZZA.html')">Pizza</button>
-    <button onclick="loadMap('choropleth_AVERAGESCORESALAD.html')">Salad</button>
-    <button onclick="loadMap('choropleth_AVERAGESCORESANDWICH.html')">Sandwich</button>
-    <button onclick="loadMap('choropleth_AVERAGESCORESEAFOOD.html')">Seafood</button>
-</div>
+<select id="mapDropdown" style="display: block; margin: 20px auto;">
+    <option value="choropleth_AVERAGESCOREASIAN.html">Asian Cuisine Score</option>
+    <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery Score</option>
+    <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage Score</option>
+    <option value="choropleth_AVERAGESCOREBURGER.html">Burger Score</option>
+    <option value="choropleth_AVERAGESCOREHOTDOG.html">Hot Dog Score</option>
+    <option value="choropleth_AVERAGESCOREMEXICAN.html">Mexican Cuisine Score</option>
+    <option value="choropleth_AVERAGESCOREPIZZA.html">Pizza Score</option>
+    <option value="choropleth_AVERAGESCORESALAD.html">Salad Score</option>
+    <option value="choropleth_AVERAGESCORESANDWICH.html">Sandwich Score</option>
+    <option value="choropleth_AVERAGESCORESEAFOOD.html">Seafood Score</option>
+</select>
 
 <script>
-function loadMap(mapFilename) {
+document.getElementById('mapDropdown').addEventListener('change', function() {
+    var selectedMap = this.value;
     var container = document.getElementById('mapContainer');
-    fetch(mapFilename)
+    fetch(selectedMap)
         .then(response => response.text())
         .then(html => {
             container.innerHTML = html;
         })
         .catch(error => console.error('Error loading the map:', error));
-}
+});
 </script>
-
 
 
 
