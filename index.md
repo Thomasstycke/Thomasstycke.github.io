@@ -28,6 +28,12 @@ Guided by the latest inspection data, let's explore the violation codes in detai
 So, the violations that most possible to be occurring at a restaurant is regarding sanitation and pest...
 </p>
 
+<p style="text-align: justify; text-justify: inter-word;">
+Let's take a closer look at the distribution of violation types across different groups with the following visualization:
+</p>
+
+{% include violation_group_distribution.html %}
+
 <b style="text-align: justify; text-justify: inter-word;">
 Craving thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
 </b>
