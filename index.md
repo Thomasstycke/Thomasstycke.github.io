@@ -77,10 +77,13 @@ Figure 3 provides insights into the distribution of violations across various cu
 
 </p>
 
-<figure id="figure4" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
+<figure id="figure3" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   <img src="assets/img/piechart.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption style="text-align: justify;"><b>Figure 3:</b> Pie-charts for the different cuisines showing the distribution of violation codes reported. </figcaption>
 </figure>
+<figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
+  <b>Figure 3:</b> Pie-charts for the different cuisines showing the distribution of violation codes reported.
+</figcaption>
+
 
 <br>
 
