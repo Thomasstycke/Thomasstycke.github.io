@@ -74,9 +74,7 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
     <option value="choropleth_Sandwiches.html">Sandwiches</option>
     <option value="choropleth_Seafood.html">Seafood</option>
   </select>
-  <div id="mapContainer">
-    {% include Choropleth_maps/choropleth_Asian.html %}
-  </div>
+  <iframe id="mapFrame" src="/_includes/Choropleth_maps/choropleth_Asian.html" style="width: 100%; height: 600px;"></iframe>
   <figcaption style="text-align: justify;">
     <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Select a category from the dropdown to view the map.
   </figcaption>
@@ -85,7 +83,7 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 <script>
   document.getElementById('mapSelector').addEventListener('change', function() {
     var selectedMap = this.value;
-    document.getElementById('mapContainer').innerHTML = "{% include Choropleth_maps/" + selectedMap + " %}";
+    document.getElementById('mapFrame').src = "/_includes/Choropleth_maps/" + selectedMap;
   });
 </script>
 
