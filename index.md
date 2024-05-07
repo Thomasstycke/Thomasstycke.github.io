@@ -34,10 +34,11 @@ Let's take a closer look at the distribution of violation types across different
 
 <figure id="figure1" style="max-width: 100%; height: auto; display: block; margin: auto; transform: scale(0.7) translateX(-30%);">
     {% include violation_group_distribution.html %}
-    <figcaption style="text-align: justify;">
+    <figcaption style="text-align: center; width: 100%; display: block; margin-top: 10px;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
 
 
 <b style="text-align: justify; text-justify: inter-word;">
