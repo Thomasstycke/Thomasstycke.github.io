@@ -58,8 +58,6 @@ Hygiene Status
 </b>
 
 <br>
-<br>
-<br>
 
 <figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
     {% include choropleth_AVERAGESCOREASIAN.html %}
@@ -68,8 +66,6 @@ Hygiene Status
     </figcaption>
 </figure>
 
-<br>
-<br>
 <br>
 
 <p style="text-align: justify; text-justify: inter-word;">
