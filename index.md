@@ -89,7 +89,6 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </p>
 
 <figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
-    <!-- The container where the selected HTML file will be displayed -->
     <div id="mapContainer">
         {% include choropleth_AVERAGESCOREASIAN.html %}
     </div>
@@ -98,31 +97,32 @@ Although there is no distinct pattern indicating higher risks associated with sp
     </figcaption>
 </figure>
 
-<select id="mapDropdown" style="display: block; margin: 20px auto;">
-    <option value="choropleth_AVERAGESCOREASIAN.html">Asian Cuisine Score</option>
-    <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery Score</option>
-    <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage Score</option>
-    <option value="choropleth_AVERAGESCOREBURGER.html">Burger Score</option>
-    <option value="choropleth_AVERAGESCOREHOTDOG.html">Hot Dog Score</option>
-    <option value="choropleth_AVERAGESCOREMEXICAN.html">Mexican Cuisine Score</option>
-    <option value="choropleth_AVERAGESCOREPIZZA.html">Pizza Score</option>
-    <option value="choropleth_AVERAGESCORESALAD.html">Salad Score</option>
-    <option value="choropleth_AVERAGESCORESANDWICH.html">Sandwich Score</option>
-    <option value="choropleth_AVERAGESCORESEAFOOD.html">Seafood Score</option>
-</select>
+<!-- Buttons for each map -->
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="loadMap('choropleth_AVERAGESCOREASIAN.html')">Asian Cuisine</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREBAKERY.html')">Bakery</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREBEVERAGE.html')">Beverage</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREBURGER.html')">Burger</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREHOTDOG.html')">Hot Dog</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREMEXICAN.html')">Mexican Cuisine</button>
+    <button onclick="loadMap('choropleth_AVERAGESCOREPIZZA.html')">Pizza</button>
+    <button onclick="loadMap('choropleth_AVERAGESCORESALAD.html')">Salad</button>
+    <button onclick="loadMap('choropleth_AVERAGESCORESANDWICH.html')">Sandwich</button>
+    <button onclick="loadMap('choropleth_AVERAGESCORESEAFOOD.html')">Seafood</button>
+</div>
 
 <script>
-document.getElementById('mapDropdown').addEventListener('change', function() {
-    var selectedMap = this.value;
+function loadMap(mapFilename) {
     var container = document.getElementById('mapContainer');
-    fetch(selectedMap)
+    fetch(mapFilename)
         .then(response => response.text())
         .then(html => {
             container.innerHTML = html;
         })
         .catch(error => console.error('Error loading the map:', error));
-});
+}
 </script>
+
 
 
 
