@@ -39,8 +39,6 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
-
-
 <b style="text-align: justify; text-justify: inter-word;">
 Craving thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
 </b>
@@ -59,9 +57,9 @@ Hygiene Status
 
 <br>
 
-<figure id="figure1" style="max-width: 50%; height: auto; display: block; margin: 10px auto;">
-    {% include violation_group_distribution.html %}
-    <figcaption style="text-align: center; width: 100%; display: block; margin-top: 10px;">
+<figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
+    {% include choropleth_AVERAGESCOREASIAN.html %}
+    <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
