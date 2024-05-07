@@ -55,12 +55,13 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 Hygiene Status
 </b>
 
-<figure id="figure1" style="max-width: 130%; transform: translate(-15%, 0); display: block; margin-left: auto; margin-right: auto; overflow: hidden; position: relative;"> 
+<figure id="figure1" style="max-width: 100%; transform: scale(1.3); display: block; margin-left: auto; margin-right: auto; position: relative; overflow: hidden;"> 
     {% include choropleth_AVERAGESCOREASIAN.html %}
     <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
 
 
 <p style="text-align: justify; text-justify: inter-word;">
