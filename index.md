@@ -71,7 +71,7 @@ Hygiene Status
 
 <!-- Area where the selected map will be displayed -->
 <iframe id="mapFrame" src="choropleth_AVERAGESCOREASIAN.html" width="100%" height="500" frameborder="0">
-    Sorry, your browser doesn't support embedded files.
+    Sorry, your browser doesn support embedded files.
 </iframe>
 
 <script>
