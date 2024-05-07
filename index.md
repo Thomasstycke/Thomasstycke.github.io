@@ -39,11 +39,9 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
-<figure id="figure2" style="max-width: 100%; display: block; margin: 0 auto;">
-    <img src="piechart.png" alt="Pie Chart" style="max-width: 100%;">
-    <figcaption style="text-align: justify;">
-        <b>Figure 2:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
-    </figcaption>
+<figure id="figure2" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
+  <img src="assets/img/piechart.png" alt="Descriptive Alt Text" style="width: 100%;">
+  <figcaption style="text-align: justify;"><b>Figure 2:</b> A pie chart illustrating the distribution of violation types across various groups. This visualization highlights the frequency of different health violations across different types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.</figcaption>
 </figure>
 
 <figure id="figure3" style="max-width: 100%; display: block; margin: 0 auto;">
