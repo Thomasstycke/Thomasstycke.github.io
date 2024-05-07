@@ -24,12 +24,6 @@ So, what is the most common violation type in NYC?
 Guided by the latest inspection data, let's explore the violation codes in detail. Each code signifies a distinct type of health infraction, grouped into seven categories that range from minor concerns like improper food storage to more critical issues such as unsanitary cooking conditions or pest presence. Figure 1 provides a clear view of the most common violation types in recent New York City inspections. It reveals that Facility Sanitation is overwhelmingly the most common violation, followed by Pest Control. Conversely. While Chemical Safety is the least frequent, with only 20 recorded instances - which is still 20 too many.
 </p>
 
-<figure id="figure1" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
-  <img src="/assets/img/calendar_plot.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption style="text-align: justify;"><b>Figure 1:</b> A calendar plot displaying the count of crimes categorized as assault from 2003 to 2017. The color bar illustrates the daily count of crimes, highlighting a noticeable trend of significantly higher counts on the first day of each year.</figcaption>
-</figure>
-
-
 <p style="text-align: justify; text-justify: inter-word;">
 So, the violations that most possible to be occurring at a restaurant is regarding sanitation and pest...
 </p>
@@ -46,13 +40,6 @@ Considering a specific cuisine — Burger, Pizza or a Sandwich? The type of cuis
 Figure 2 reveals a trend of the distribution of the violation codes having the same hiarachy. This being, that all the violation codes are distributed somewhat the same; having the facility sanitation code being the most common, the Pest control the second and so on in all kitchens. Though, the figure tells us, that the Chemical Safety violation haven’t been reported in restaurants serving Sandwiches or Hotdogs.
 </p>
 
-<figure id="figure2"> 
-  {% include map.html %}
-  <figcaption style="text-align: justify;">
-    <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
-  </figcaption>
-</figure>
-
 <b style="text-align: justify; text-justify: inter-word;">
 Hygiene Status
 </b>
@@ -60,13 +47,6 @@ Hygiene Status
 <p style="text-align: justify; text-justify: inter-word;">
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
 </p>
-
-<figure id="figure3">
-  {% include violation_group_distribution.html %}
-  <figcaption style="text-align: justify;">
-  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down. The legend with different districts is interactive making it possible to choose which district to display. 
-  </figcaption>
-</figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
 Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
@@ -80,11 +60,6 @@ DBA
 Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category.
 </p>
 
-<ol>
-    <li id="ref1"><a href="https://www.hindustantimes.com/world-news/new-years-eve-fireworks-in-san-francisco-top-7-spots-to-ring-in-2024-celebrations-101704006372655-amp.html">New Year's Eve fireworks in San Francisco: Top 7 spots to ring in 2024</a>. Hindustan Times.</li>
-    <li id="ref2"><a href="https://www.prisonpolicy.org/origin/ca/2020/sanfrancisco_police.html">SFPD Disrict Residents</a>. Prison Policy Initiative.</li>
-    <li id="ref3"><a href="https://en.wikipedia.org/wiki/Tenderloin,_San_Francisco">Tenderloin, San Francisco</a>. Wikipedia.</li>
-</ol>
 
 <head>
   <title>Contributions</title>
