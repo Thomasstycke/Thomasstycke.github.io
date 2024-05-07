@@ -59,12 +59,38 @@ Hygiene Status
 
 <br>
 
+<div>
+    <label for="mapSelector">Select Map:</label>
+    <select id="mapSelector" onchange="changeMap(this.value)">
+        <option value="choropleth_AVERAGESCOREASIAN.html">Asian</option>
+        <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery</option>
+        <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage</option>
+        <option value="choropleth_AVERAGESCOREBURGER.html">Burger</option>
+        <option value="choropleth_AVERAGESCOREHOTDOG.html">Hotdog</option>
+        <option value="choropleth_AVERAGESCOREMEXICAN.html">Mexican</option>
+        <option value="choropleth_AVERAGESCOREPIZZA.html">Pizza</option>
+        <option value="choropleth_AVERAGESCORESALAD.html">Salad</option>
+        <option value="choropleth_AVERAGESCORESANDWICH.html">Sandwich</option>
+        <option value="choropleth_AVERAGESCORESEAFOOD.html">Seafood</option>
+    </select>
+</div>
+
 <figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
-    {% include choropleth_AVERAGESCOREASIAN.html %}
+    <div id="mapContainer">
+        {% include choropleth_AVERAGESCOREASIAN.html %}
+    </div>
     <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
+<script>
+    function changeMap(mapName) {
+        var mapContainer = document.getElementById('mapContainer');
+        mapContainer.innerHTML = '{% include ' + mapName + ' %}';
+    }
+</script>
+
 
 <br>
 <br>
