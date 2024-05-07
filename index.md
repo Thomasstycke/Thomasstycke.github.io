@@ -32,7 +32,14 @@ So, the violations that most possible to be occurring at a restaurant is regardi
 Let's take a closer look at the distribution of violation types across different groups with the following visualization:
 </p>
 
-<figure id="figure1" style="max-width: 100%; height: auto; margin-left: -50%;"> 
+<figure id="figure1" style="max-width: 100%; height: auto; margin-left: -75%;"> 
+    {% include violation_group_distribution.html %}
+    <figcaption style="text-align: justify;">
+        <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
+    </figcaption>
+</figure>
+
+<figure id="figure23" style="transform: scale(0.75); margin-left: auto; margin-right: auto; display: block; max-width: 90%; height: auto;"> 
     {% include violation_group_distribution.html %}
     <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
