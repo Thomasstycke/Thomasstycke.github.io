@@ -61,37 +61,12 @@ Hygiene Status
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
 </p>
 
-<select id="mapDropdown">
-  <option value="">Select a map</option>
-  <option value="choropleth_Asian.html">Asian</option>
-  <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
-  <option value="choropleth_Beverages & More.html">Beverages & More</option>
-  <option value="choropleth_Burgers.html">Burgers</option>
-  <option value="choropleth_Hotdogs.html">Hotdogs</option>
-  <option value="choropleth_Mexican.html">Mexican</option>
-  <option value="choropleth_Pizza.html">Pizza</option>
-  <option value="choropleth_Salads\Vegan.html">Salads & Vegan</option>
-  <option value="choropleth_Sandwiches.html">Sandwiches</option>
-  <option value="choropleth_Seafood.html">Seafood</option>
-</select>
-
-<div id="mapContainer"></div>
-
-<script>
-document.getElementById('mapDropdown').addEventListener('change', function() {
-  var selectedMap = this.value;
-  if (selectedMap !== "") {
-    fetch(`/Choropleth_maps/${selectedMap}`)
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('mapContainer').innerHTML = html;
-      })
-      .catch(error => console.error('Error loading map:', error));
-  } else {
-    document.getElementById('mapContainer').innerHTML = ''; // Clear map if no option selected
-  }
-});
-</script>
+<figure id="figure3">
+  {% include choropleth_Burgers.html.html %}
+  <figcaption style="text-align: justify;">
+  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down. The legend with different districts is interactive making it possible to choose which district to display. 
+  </figcaption>
+</figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
 Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
