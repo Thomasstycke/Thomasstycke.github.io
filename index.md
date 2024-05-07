@@ -2,14 +2,14 @@
 layout: home
 ---
 
-<h2>From Delicious to Dangerous: The Health Violation Crisis in NYC Eateries</h2>
+<h2>From Delicious to Dangerous: The Health Violation Crisis in NYC Restaurants</h2>
 
 <b style="text-align: justify; text-justify: inter-word;">
 Thinking of dining out in New York City? Picking the perfect spot is more than just about taste—it’s about trust! We’re diving into a dataset describing NYC restaurant inspection results to uncover the connections between location, cuisine, brand, and health violations. Join us on a journey to discover the cleanest kitchens in the city, and make your next meal out a safe and satisfying one!
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Every restaurant in NYC has at least one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 224.115 inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes. Based on the extent and frequency of these violations, restaurants are categorized as either in a critical or non-critical state.
+Every restaurant in NYC has atleast one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 224.155 inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes.. Based on the extent and frequency of these violations, restaurants are given a score and categorized as either in a critical or non-critical state.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
@@ -21,70 +21,65 @@ So, what is the most common violation type in NYC?
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Guided by the latest inspection data, let's explore the violation codes in detail. Each code signifies a distinct type of health infraction, grouped into seven categories that range from minor concerns like improper food storage to more critical issues such as unsanitary cooking conditions or pest presence. Figure 1 provides a clear view of the most common violation types in recent New York City inspections. It reveals that Facility Sanitation is overwhelmingly the most common violation, followed by Pest Control. Conversely. While Chemical Safety is the least frequent, with only 20 recorded instances - which is still 20 too many.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-So, the violations that most possible to be occurring at a restaurant is regarding sanitation and pest...
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-Let's take a closer look at the distribution of violation types across different groups with the following visualization:
+Guided by the latest inspection data, let's begin an in-depth exploration of violation codes. Each code represents a unique type of health violation, carefully categorized into seven distinct groups, as outlined in Table 1. These categories cover a spectrum of concerns, spanning from minor issues like improper facility maintenance to more serious matters such as unsanitary cooking conditions or bad staff hygiene.
 </p>
 
 <figure id="figure1" style="max-width: 100%; display: block; margin: 0 auto;">
     {% include violation_groups.html %}
     <figcaption style="text-align: justify;">
-        <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
+        <b>Table 1:</b> Provides definitions of violation groups, along with their counts from the latest inspections and an example of a violation description within each group.
     </figcaption>
 </figure>
+
+<p style="text-align: justify; text-justify: inter-word;">
+The counts and frequencies of different violation groups vary. Concurrently, Figure 1 offers insight into the distribution of violation types in recent inspections in NYC. Notably, Facility Sanitation emerges as the most prevalent violation, followed closely by Pest Control. In contrast, Chemical Safety records the lowest frequency, with only 20 instances recorded- which is still 20 too many.
+</p>
+
 
 <figure id="figure2" style="max-width: 100%; display: block; margin: 0 auto;">
     {% include monthly_violation_counts.html %}
     <figcaption style="text-align: justify;">
-        <b>Figure 2:</b> Monthly Violation Counts. This visualization shows the distribution of violation counts on a monthly basis.
+        <b>Figure 1:</b> Line chart illustrating the inspection count for each defined violation group, depending on the selected time period. Below the chart, an interactive range slider graph allows users to select specific data ranges. Additionally, a legend positioned to the right enables users to choose which violation group to display on the chart.
     </figcaption>
 </figure>
+
+
+<p style="text-align: justify; text-justify: inter-word;">
+Additionally, the plot demonstrates a significant increase in the counts of most violation groups since mid-2022. This surge could be attributed to increased investment in inspections or stricter documentation procedures within this dataset.
+However, it's important to note that while Facility Sanitation appears as the most frequent violation, its frequency doesn't necessarily correlate with its level of criticality. To better understand the urgency of each violation group, critical conditions have been investigated and plotted in Figure 2.
+</p>
 
 <figure id="figure3" style="max-width: 100%; display: block; margin: 0 auto;">
     {% include total_inspections_criticality.html %}
     <figcaption style="text-align: justify;">
-        <b>Figure 3:</b> Total Inspections Criticality. This visualization illustrates the criticality levels of inspections conducted.
+        <b>Figure 2:</b> Stacked Bar Chart displaying the count of inspections dependent of the Violation group. The stacked bars indicated the percentage of the count given the flag critical and not critical.
     </figcaption>
 </figure>
 
+<p style="text-align: justify; text-justify: inter-word;">
+Figure 2 highlights the critical nature of certain violation groups, notably Temperature Control, Staff Hygiene, and Chemical Safety.  Notably, despite its high frequency, Facility Sanitation does not emerge as the most critical violation group, suggesting that it may not be as critical to address compared to other violations.It's noteworthy that while Temperature Control ranks as the third most frequent violation, Figure 2 reveals it to be among the most critical. This contrast suggests a nuanced understanding of violation severity beyond mere frequency.
+</p>
+
+<b style="text-align: justify; text-justify: inter-word;">
+Craving thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
+</b>
+
+
+<p style="text-align: justify; text-justify: inter-word;">
+The type of cuisine may influence the likelihood of certain violations due to different cooking methods and ingredients. Despite these differences, we observed a consistent pattern across all cuisines: approximately 50% of inspections result in a Critical flag, while the remaining 50% receive a Not Critical flag.
+Figure 3 provides insights into the distribution of violations across various cuisines, uncovering some differences. While there's a consistent flag distribution, variations in violation types across cuisines suggest that specific culinary practices or ingredients may incline kitchens to certain types of violations.
+
+</p>
+
 <figure id="figure4" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
   <img src="assets/img/piechart.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption style="text-align: justify;"><b>Figure 4:</b> A pie chart illustrating the distribution of violation types across various groups. This visualization highlights the frequency of different health violations across different types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.</figcaption>
+  <figcaption style="text-align: justify;"><b>Figure 3:</b> Pie-charts for the different cuisines showing the distribution of violation codes reported. </figcaption>
 </figure>
 
 
-
-<b style="text-align: justify; text-justify: inter-word;">
-Craving Thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
-</b>
-
-
 <p style="text-align: justify; text-justify: inter-word;">
-Considering a specific cuisine — Burger, Pizza or a Sandwich? The type of cuisine may influence the likelihood of certain violations due to different cooking methods and ingredients. Figure 2 highlights a consistent distribution of violations across various cuisines, with Facility Sanitation consistently ranking highest. Notably, Chemical Safety violations are absent in eateries serving sandwiches or hot dogs.
-</p>
-
-<p style="text-align: justify; text-justify: inter-word;">
-Figure 2 reveals a trend of the distribution of the violation codes having the same hiarachy. This being, that all the violation codes are distributed somewhat the same; having the facility sanitation code being the most common, the Pest control the second and so on in all kitchens. Though, the figure tells us, that the Chemical Safety violation haven’t been reported in restaurants serving Sandwiches or Hotdog.
-</p>
-
-<b style="text-align: justify; text-justify: inter-word;">
-Hygiene Status
-</b>
-
-
-<p style="text-align: justify; text-justify: inter-word;">
-The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, let's look into how many inspections actually led to the restaurant getting flagged as a critical hygiene condition.
-</p>
-
-
-<p style="text-align: justify; text-justify: inter-word;">
-Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
+Figure 3 illustrates a consistent trend in the distribution of violation codes, where Facility Sanitation is the most common violation followed by Pest Control across all kitchens. However, considering the criticality distributions from Figure 2, we observe that cuisines with higher percentages of Temperature Control and Staff Hygiene violations pose a greater risk of being in a critical hygiene condition. Specifically, Asian and Pizza cuisines exhibit notably higher percentages in Temperature Control violations, at 16.8% and 15.6%, respectively. Additionally, Asian cuisine also shows a high percentage in Staff Hygiene violations, along with Hotdogs.
+Though, based on the latest inspections, it can be concluded that Hotdog Restaurants are the only ones not reported for a violation of Chemical Safety.
 </p>
 
 <b style="text-align: justify; text-justify: inter-word;">
