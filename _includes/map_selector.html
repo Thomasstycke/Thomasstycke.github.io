@@ -12,13 +12,13 @@
     <option value="choropleth_Seafood.html">Seafood</option>
 </select>
 
-<iframe id="mapFrame" src="{{ 'choropleth_Asian.html' | prepend: site.baseurl }}" style="width: 100%; height: 600px;"></iframe>
+<iframe id="mapFrame" src="{{ 'choropleth_Asian.html' | prepend: https://thomasstycke.github.io// }}" style="width: 100%; height: 600px;"></iframe>
 
 <script>
     function changeMap() {
         var selector = document.getElementById('mapSelector');
         var selectedMap = selector.value;
         var frame = document.getElementById('mapFrame');
-        frame.src = "{{ site.baseurl }}" + "/_includes/Choropleth_maps/" + selectedMap; // Make sure this path is correct
+        frame.src = "{{ https://thomasstycke.github.io// }}" + "/_includes/Choropleth_maps/" + selectedMap; // Make sure this path is correct
     }
 </script>
