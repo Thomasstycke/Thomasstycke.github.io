@@ -41,8 +41,6 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
-
-
 <b style="text-align: justify; text-justify: inter-word;">
 Craving Thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
 </b>
