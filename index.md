@@ -55,6 +55,33 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 Hygiene Status
 </b>
 
+<!-- Dropdown for selecting the map -->
+<select id="mapSelection" onchange="updateMap()">
+  <option value="choropleth_AVERAGESCOREASIAN.html">Asian Cuisine</option>
+  <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery</option>
+  <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage</option>
+  <option value="choropleth_AVERAGESCOREBURGER.html">Burger</option>
+  <option value="choropleth_AVERAGESCOREHOTDOG.html">Hot Dog</option>
+  <option value="choropleth_AVERAGESCOREMEXICAN.html">Mexican</option>
+  <option value="choropleth_AVERAGESCOREPIZZA.html">Pizza</option>
+  <option value="choropleth_AVERAGESCORESALAD.html">Salad</option>
+  <option value="choropleth_AVERAGESCORESANDWICH.html">Sandwich</option>
+  <option value="choropleth_AVERAGESCORESEAFOOD.html">Seafood</option>
+</select>
+
+<!-- Area where the selected map will be displayed -->
+<iframe id="mapFrame" src="choropleth_AVERAGESCOREASIAN.html" width="100%" height="500" frameborder="0">
+    Sorry, your browser doesn't support embedded files.
+</iframe>
+
+<script>
+  function updateMap() {
+    var selectedMap = document.getElementById('mapSelection').value;
+    document.getElementById('mapFrame').src = selectedMap;
+  }
+</script>
+
+
 <p style="text-align: justify; text-justify: inter-word;">
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
 </p>
