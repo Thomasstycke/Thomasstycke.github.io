@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="b2bd7827-df8a-4433-9d8a-e426c66dd9b8" data-root-id="p1045" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1046">
+      {"4657f9ae-f705-4c19-9e42-3742c4c1f1ca":{"version":"3.2.1","title":"Bokeh Application","roots":[{"type":"object","name":"Column","id":"p1045","attributes":{"children":[{"type":"object","name":"DataTable","id":"p1039","attributes":{"width":800,"source":{"type":"object","name":"ColumnDataSource","id":"p1024","attributes":{"selected":{"type":"object","name":"Selection","id":"p1025","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1026"},"data":{"type":"map","entries":[["groups",["Facility Sanitation","Pest Control","Temperature Control","Facility Maintenance","Staff Hygiene","Food Sourcing and Labeling","Chemical Safety"]],["counts",[21171,14237,6651,5801,5033,546,64]],["descriptions",["Sanitized equipment or utensil, including in-use food dispensing utensil, improperly used or stored.","Establishment is not free of harborage or conditions conducive to rodents, insects or other pests.","Hot TCS food item not held at or above 140 \u00b0F.","Anti-siphonage or back-flow prevention device not provided where required; equipment or floor not properly drained; sewage disposal system in disrepair or not functioning properly. Condensation or liquid waste improperly disposed of.","Personal cleanliness is inadequate. Outer garment soiled with possible contaminant. Effective hair restraint not worn where required.  Jewelry is worn on hands or arms.  Fingernail polish worn or fingernails not kept clean and trimmed.","Garbage receptacle not pest or water resistant, with tight-fitting lids, and covered except while in active use. Garbage receptacle and cover not cleaned after emptying and prior to reuse. Garbage, refuse and other solid and liquid waste not collected, stored, removed and disposed of so as to prevent a nuisance.","Toxic chemical or pesticide improperly stored or used such that food contamination may occur."]]]}}},"view":{"type":"object","name":"CDSView","id":"p1043","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1044"}}},"columns":[{"type":"object","name":"TableColumn","id":"p1028","attributes":{"field":"groups","title":"Violation Group","width":200,"formatter":{"type":"object","name":"StringFormatter","id":"p1030"},"editor":{"type":"object","name":"IntEditor","id":"p1027"}}},{"type":"object","name":"TableColumn","id":"p1032","attributes":{"field":"counts","title":"Count","width":100,"formatter":{"type":"object","name":"StringFormatter","id":"p1034"},"editor":{"type":"object","name":"IntEditor","id":"p1031"}}},{"type":"object","name":"TableColumn","id":"p1036","attributes":{"field":"descriptions","title":"Violation Descriptions","width":2000,"formatter":{"type":"object","name":"StringFormatter","id":"p1038"},"editor":{"type":"object","name":"IntEditor","id":"p1035"}}}],"fit_columns":false,"editable":true,"index_position":null,"index_width":50}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1046').textContent;
+              const render_items = [{"docid":"4657f9ae-f705-4c19-9e42-3742c4c1f1ca","roots":{"p1045":"b2bd7827-df8a-4433-9d8a-e426c66dd9b8"},"root_ids":["p1045"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
