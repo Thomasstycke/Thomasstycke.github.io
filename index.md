@@ -55,18 +55,17 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 Hygiene Status
 </b>
 
-<figure id="figure1" style="max-width: 100%; transform: scale(1.3); display: block; margin-left: auto; margin-right: auto; position: relative; overflow: hidden;"> 
+<figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
     {% include choropleth_AVERAGESCOREASIAN.html %}
     <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
 
-
-
 <p style="text-align: justify; text-justify: inter-word;">
-The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
+The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, let's look into how many inspections actually led to the restaurant getting flagged as a critical hygiene condition.
 </p>
+
 
 <p style="text-align: justify; text-justify: inter-word;">
 Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
