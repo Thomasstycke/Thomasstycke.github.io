@@ -39,23 +39,23 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
-<figure id="figure2" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
-  <img src="assets/img/piechart.png" alt="Descriptive Alt Text" style="width: 100%;">
-  <figcaption style="text-align: justify;"><b>Figure 2:</b> A pie chart illustrating the distribution of violation types across various groups. This visualization highlights the frequency of different health violations across different types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.</figcaption>
+<figure id="figure2" style="max-width: 100%; display: block; margin: 0 auto;">
+    {% include monthly_violation_counts.html %}
+    <figcaption style="text-align: justify;">
+        <b>Figure 2:</b> Monthly Violation Counts. This visualization shows the distribution of violation counts on a monthly basis.
+    </figcaption>
 </figure>
 
 <figure id="figure3" style="max-width: 100%; display: block; margin: 0 auto;">
-    {% include monthly_violation_counts.html %}
+    {% include total_inspections_criticality.html %}
     <figcaption style="text-align: justify;">
-        <b>Figure 3:</b> Monthly Violation Counts. This visualization shows the distribution of violation counts on a monthly basis.
+        <b>Figure 3:</b> Total Inspections Criticality. This visualization illustrates the criticality levels of inspections conducted.
     </figcaption>
 </figure>
 
-<figure id="figure4" style="max-width: 100%; display: block; margin: 0 auto;">
-    {% include total_inspections_criticality.html %}
-    <figcaption style="text-align: justify;">
-        <b>Figure 4:</b> Total Inspections Criticality. This visualization illustrates the criticality levels of inspections conducted.
-    </figcaption>
+<figure id="figure4" style="text-align: center; width: 130%; margin-left: -15%; margin-right: -15%;">
+  <img src="assets/img/piechart.png" alt="Descriptive Alt Text" style="width: 100%;">
+  <figcaption style="text-align: justify;"><b>Figure 4:</b> A pie chart illustrating the distribution of violation types across various groups. This visualization highlights the frequency of different health violations across different types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.</figcaption>
 </figure>
 
 
