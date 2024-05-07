@@ -62,9 +62,9 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 </p>
 
 <figure id="figure3">
-  {% include cleaned_bokeh_plot.html %}
+  {% include map_selector.html %}
   <figcaption style="text-align: justify;">
-  <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down. The legend with different districts is interactive making it possible to choose which district to display. 
+    <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Users can select different categories from the dropdown menu to view corresponding maps.
   </figcaption>
 </figure>
 
