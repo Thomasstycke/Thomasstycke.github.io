@@ -9,7 +9,7 @@ Thinking of dining out in New York City? Picking the perfect spot is more than j
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Every restaurant in NYC has at least one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 28.752 (224115) inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes. Based on the extent and frequency of these violations, restaurants are categorized as either in a critical or non-critical state.
+Every restaurant in NYC has at least one visit from the Department of Health and Mental Hygiene (DOHMH) every year depending on the result of the previous inspection. The dataset describes a total of 224.115 inspection results through a 10-year time period from 2015 to 2024. If any violations are present, the inspection reports define them with specific violation codes. Based on the extent and frequency of these violations, restaurants are categorized as either in a critical or non-critical state.
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
@@ -32,7 +32,7 @@ So, the violations that most possible to be occurring at a restaurant is regardi
 Let's take a closer look at the distribution of violation types across different groups with the following visualization:
 </p>
 
-<figure id="figure1" style="max-width: 50%; height: auto; display: block; margin: 10px auto; position: relative; left: -100%;">
+<figure id="figure1" style="max-width: 50%; height: auto; display: block; margin: 10px auto; position: relative; left: -100%; transform: scale(0.5);">
     {% include violation_group_distribution.html %}
     <figcaption style="text-align: center; width: 100%; display: block; margin-top: 10px;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
