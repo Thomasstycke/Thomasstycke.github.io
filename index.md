@@ -39,7 +39,6 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
-
 <b style="text-align: justify; text-justify: inter-word;">
 Craving thai, burger or Chinese food? Maybe have the cuisine in mind when deciding.
 </b>
@@ -56,12 +55,13 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 Hygiene Status
 </b>
 
-<figure id="figure1" style="max-width: 100%;"> 
+<figure id="figure1" style="max-width: 130%; transform: translate(-15%, 0); display: block; margin-left: auto; margin-right: auto; overflow: hidden; position: relative;"> 
     {% include choropleth_AVERAGESCOREASIAN.html %}
     <figcaption style="text-align: justify;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
 
 <p style="text-align: justify; text-justify: inter-word;">
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, lets look into how many inspections actually let to the restaurant getting flagged as critical hygiene condition.
