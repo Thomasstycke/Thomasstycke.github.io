@@ -57,7 +57,7 @@ Hygiene Status
 
 <!-- Dropdown for selecting the map -->
 <select id="mapSelection" onchange="updateMap()">
-  <option value="choropleth_AVERAGESCOREASIAN.html">Asian Cuisine</option>
+  <option value="choropleth_AVERAGESCOREASIAN.html">Asian</option>
   <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery</option>
   <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage</option>
   <option value="choropleth_AVERAGESCOREBURGER.html">Burger</option>
