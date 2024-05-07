@@ -62,12 +62,32 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 </p>
 
 <figure id="figure3">
-  {% include map_selector.html %}
+  <select id="mapSelector">
+    <option value="choropleth_Asian.html">Asian</option>
+    <option value="choropleth_Bakery, Desserts & Snacks.html">Bakery, Desserts & Snacks</option>
+    <option value="choropleth_Beverages & More.html">Beverages & More</option>
+    <option value="choropleth_Burgers.html">Burgers</option>
+    <option value="choropleth_Hotdogs.html">Hotdogs</option>
+    <option value="choropleth_Mexican.html">Mexican</option>
+    <option value="choropleth_Pizza.html">Pizza</option>
+    <option value="choropleth_Salads\Vegan.html">Salads/Vegan</option>
+    <option value="choropleth_Sandwiches.html">Sandwiches</option>
+    <option value="choropleth_Seafood.html">Seafood</option>
+  </select>
+  <div id="mapContainer">
+    {% include Choropleth_maps/choropleth_Asian.html %}
+  </div>
   <figcaption style="text-align: justify;">
     <b>Figure 3:</b> Interactive choropleth maps showing different food category scores across regions. Select a category from the dropdown to view the map.
   </figcaption>
 </figure>
 
+<script>
+  document.getElementById('mapSelector').addEventListener('change', function() {
+    var selectedMap = this.value;
+    document.getElementById('mapContainer').innerHTML = "{% include Choropleth_maps/" + selectedMap + " %}";
+  });
+</script>
 
 <p style="text-align: justify; text-justify: inter-word;">
 Figure 3 illustrates that the probability of a restaurant being flagged as critically unhygienic is approximately 50/50 across all cuisines, indicating that the likelihood of encountering severe health risks does not depend on the type of cuisine served. This trend shows an equal distribution of critical and non-critical health ratings, reinforcing that no specific cuisine is more likely to have severe health violations.
