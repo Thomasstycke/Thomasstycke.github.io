@@ -57,7 +57,9 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 Hygiene Status
 </b>
 
-
+<br>
+<br>
+<br>
 
 <figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
     {% include choropleth_AVERAGESCOREASIAN.html %}
@@ -65,6 +67,10 @@ Hygiene Status
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
 </figure>
+
+<br>
+<br>
+<br>
 
 <p style="text-align: justify; text-justify: inter-word;">
 The presence of a violation code doesn’t necessarily equate to a critical hygiene status. Therefore, let's look into how many inspections actually led to the restaurant getting flagged as a critical hygiene condition.
