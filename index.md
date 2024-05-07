@@ -32,10 +32,7 @@ So, the violations that most possible to be occurring at a restaurant is regardi
 Let's take a closer look at the distribution of violation types across different groups with the following visualization:
 </p>
 
-<figure id="figure1" style="max-width: 30%; display: block; margin: 10px auto;">  <!-- Adjusted max-width to 30% assuming scale down to 60% -->
-    <div style="transform: scale(0.6); transform-origin: top center;"> <!-- Scale applied here -->
-        {% include violation_group_distribution.html %}
-    </div>
+<figure id="figure1" style="max-width: 70%">  
     <figcaption style="text-align: center; width: 100%; display: block; margin-top: 0;">
         <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
     </figcaption>
@@ -86,43 +83,6 @@ DBA
 <p style="text-align: justify; text-justify: inter-word;">
 Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category.
 </p>
-
-<figure id="figure1" style="max-width: 100%; transform: scale(1.2); display: block; margin: 20px auto; position: relative; overflow: hidden;"> 
-    <!-- The container where the selected HTML file will be displayed -->
-    <div id="mapContainer">
-        {% include choropleth_AVERAGESCOREASIAN.html %}
-    </div>
-    <figcaption style="text-align: justify;">
-        <b>Figure 1:</b> Distribution of Violation Types Across Groups. This visualization highlights the frequency of different health violations across various types of NYC restaurants, with an emphasis on facility sanitation issues and pest control.
-    </figcaption>
-</figure>
-
-<select id="mapDropdown" style="display: block; margin: 20px auto;">
-    <option value="choropleth_AVERAGESCOREASIAN.html">Asian Cuisine Score</option>
-    <option value="choropleth_AVERAGESCOREBAKERY.html">Bakery Score</option>
-    <option value="choropleth_AVERAGESCOREBEVERAGE.html">Beverage Score</option>
-    <option value="choropleth_AVERAGESCOREBURGER.html">Burger Score</option>
-    <option value="choropleth_AVERAGESCOREHOTDOG.html">Hot Dog Score</option>
-    <option value="choropleth_AVERAGESCOREMEXICAN.html">Mexican Cuisine Score</option>
-    <option value="choropleth_AVERAGESCOREPIZZA.html">Pizza Score</option>
-    <option value="choropleth_AVERAGESCORESALAD.html">Salad Score</option>
-    <option value="choropleth_AVERAGESCORESANDWICH.html">Sandwich Score</option>
-    <option value="choropleth_AVERAGESCORESEAFOOD.html">Seafood Score</option>
-</select>
-
-<script>
-document.getElementById('mapDropdown').addEventListener('change', function() {
-    var selectedMap = this.value;
-    var container = document.getElementById('mapContainer');
-    fetch(selectedMap)
-        .then(response => response.text())
-        .then(html => {
-            container.innerHTML = html;
-        })
-        .catch(error => console.error('Error loading the map:', error));
-});
-</script>
-
 
 
 <head>
