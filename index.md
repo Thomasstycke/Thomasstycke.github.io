@@ -46,6 +46,20 @@ Let's take a closer look at the distribution of violation types across different
     </figcaption>
 </figure>
 
+<figure id="figure3" style="max-width: 100%; display: block; margin: 0 auto;">
+    {% include monthly_violation_counts.html %}
+    <figcaption style="text-align: justify;">
+        <b>Figure 3:</b> Monthly Violation Counts. This visualization shows the distribution of violation counts on a monthly basis.
+    </figcaption>
+</figure>
+
+<figure id="figure4" style="max-width: 100%; display: block; margin: 0 auto;">
+    {% include total_inspections_criticality.html %}
+    <figcaption style="text-align: justify;">
+        <b>Figure 4:</b> Total Inspections Criticality. This visualization illustrates the criticality levels of inspections conducted.
+    </figcaption>
+</figure>
+
 
 
 <b style="text-align: justify; text-justify: inter-word;">
