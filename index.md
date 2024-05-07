@@ -47,7 +47,7 @@ Figure 2 reveals a trend of the distribution of the violation codes having the s
 </p>
 
 <figure id="figure2"> 
-  {% include map.html %}
+  {% include choropleth_Pizza.html %}
   <figcaption style="text-align: justify;">
     <b>Figure 2:</b>  Choropleth map illustrating the distribution of assault incidents recorded in 2003-2017 across San Francisco's ten police districts. The color scale represents the number of assault incidents recorded per 10,000 residents in each district, offering a normalized perspective accounting for district size variations. The blue circle marker denotes the SF Central Police Station, while red circle markers indicate prime locations for observing New Year's Eve fireworks. Grey circle markers pinpoint specific locations of recorded assault incidents.
   </figcaption>
@@ -62,7 +62,7 @@ The presence of a violation code doesn’t necessarily equate to a critical hygi
 </p>
 
 <figure id="figure3">
-  {% include choropleth_Asian.html %}
+  {% include cleaned_bokeh_plot.html %}
   <figcaption style="text-align: justify;">
   <b>Figure 3:</b> A histogram showing the total counts of assault crimes recorded in each district in 2003-2017. The x-axis goes from 00:00 December 31st to 23:00 January 1st, with hours rounded down. The legend with different districts is interactive making it possible to choose which district to display. 
   </figcaption>
