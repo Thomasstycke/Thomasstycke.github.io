@@ -50,7 +50,7 @@ Considering a specific cuisine — Burger, Pizza or a Sandwich? The type of cuis
 </p>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Figure 2 reveals a trend of the distribution of the violation codes having the same hiarachy. This being, that all the violation codes are distributed somewhat the same; having the facility sanitation code being the most common, the Pest control the second and so on in all kitchens. Though, the figure tells us, that the Chemical Safety violation haven’t been reported in restaurants serving Sandwiches or Hotdogs.
+Figure 2 reveals a trend of the distribution of the violation codes having the same hiarachy. This being, that all the violation codes are distributed somewhat the same; having the facility sanitation code being the most common, the Pest control the second and so on in all kitchens. Though, the figure tells us, that the Chemical Safety violation haven’t been reported in restaurants serving Sandwiches or Hotdog.
 </p>
 
 <b style="text-align: justify; text-justify: inter-word;">
