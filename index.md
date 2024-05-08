@@ -118,8 +118,6 @@ ADD FIGURE 4 HERE!.
   </figcaption>
 </figure>
 
-
-
 <br>
 
 <figure id="figure6" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
