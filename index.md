@@ -125,6 +125,8 @@ The analysis of <a href="#figure5">Figure 5</a> raises significant food safety c
 Moreover, the identification of surrounding areas as 'red zones' suggests that these hygiene issues may not be limited to seafood establishments but could be pervasive across multiple types of dining venues in the area.
 </p>
 
+[View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
+
 
 <head>
   <title>Contributions</title>
@@ -171,3 +173,4 @@ Moreover, the identification of surrounding areas as 'red zones' suggests that t
 </table>
 
 </body>
+
