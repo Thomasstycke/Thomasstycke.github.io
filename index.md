@@ -125,6 +125,8 @@ Although there is no distinct pattern indicating higher risks associated with sp
   </figcaption>
 </figure>
 
+<br>
+
 <p style="text-align: justify; text-justify: inter-word;">
 The analysis of <a href="#figure6">Figure 5</a> raises significant food safety concerns across a variety of restaurants in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
 
