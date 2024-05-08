@@ -112,26 +112,10 @@ Although there is no distinct pattern indicating higher risks associated with sp
 <figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include Asian_circlemap.html.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 4:</b> A combined figure which first shows the 'Not Critical' ratio for top 20 DBA for the selected cuisine. Under is a map, whichs shows all the restaurants in those DBA. 
+    <b>Figure 4:</b> A combined figure which first shows the 'Not Critical' ratio for top 20 DBA for the selected cuisine. Under is a map, whichs shows all the restaurants in those DBA.
   </figcaption>
 </figure>
 
-<br>
-
-<figure id="figure6" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
-  {% include choropleth_AVERAGESCOREASIAN.html %}
-  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 5:</b> Choropleth map over NYC showing the average score for restaurants in Seafood category. In the right it shows a legend over the three intervals for the Grade a restaurant can get. Scores between 0-14 equals an A, 15-28 is a B, and 28+ is a C. If the zip code didnt have a restaurant for the chosen cuisine it got -1 in average grade and i colored gray in the map.
-  </figcaption>
-</figure>
-
-<br>
-
-<p style="text-align: justify; text-justify: inter-word;">
-The analysis of <a href="#figure6">Figure 5</a> raises significant food safety concerns across a variety of restaurants in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
-
-Moreover, the identification of surrounding areas as 'red zones' suggests that these hygiene issues may not be limited to seafood establishments but could be pervasive across multiple types of dining venues in the area.
-</p>
 
 [View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
 
