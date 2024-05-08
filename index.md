@@ -39,12 +39,13 @@ The counts and frequencies of different violation groups vary. Concurrently, Fig
 </p>
 
 
-<figure id="figure2" style="max-width: 100%; display: block; margin: 0 auto;">
-    {% include monthly_violation_counts.html %}
-    <figcaption style="text-align: justify;">
-        <b>Figure 1:</b> Line chart illustrating the inspection count for each defined violation group, depending on the selected time period. Below the chart, an interactive range slider graph allows users to select specific data ranges. Additionally, a legend positioned to the right enables users to choose which violation group to display on the chart.
-    </figcaption>
+<figure id="figure1" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
+  {% include monthly_violation_counts.html %}
+  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
+    <b>Figure 1:</b> Line chart illustrating the inspection count for each defined violation group, depending on the selected time period. Below the chart, an interactive range slider graph allows users to select specific data ranges. Additionally, a legend positioned to the right enables users to choose which violation group to display on the chart.
+  </figcaption>
 </figure>
+
 
 <br>
 
