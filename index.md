@@ -114,12 +114,13 @@ To explore this connection, <a href="#figure4">Figure 4</a> serves as a practica
 <a href="#figure4">Figure 4</a> reveals a notable pattern: as inspection counts increase, the proportion of "Not Critical" results tends to decrease. This suggests that restaurant chains with multiple locations may struggle more to maintain hygiene standards. Therefore, opting for one of the local shops depicted in the figure would likely be a safer choice when seeking cleaner dining options.
 </p>
 
+<br>
 
-<figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
-  {% include Asian_circlemap.html %}
-  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 4:</b> A combined figure which first shows the 'Not Critical' ratio for top 20 DBA for the selected cuisine. Under is a map, whichs shows all the restaurants in those DBA. 
-  </figcaption>
+<figure id="figure5" style="max-width: 100%; display: block; margin: 0 auto;">
+    {% include Asian_circlemap.html %}
+    <figcaption style="text-align: justify;">
+        <b>Figure 5:</b> Stacked Bar Chart displaying the count of inspections dependent of the Violation group. The stacked bars indicated the percentage of the count given the flag critical and not critical.
+    </figcaption>
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
