@@ -105,7 +105,7 @@ Although there is no distinct pattern indicating higher risks associated with sp
 <figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include choropleth_AVERAGESCORESEAFOOD.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 4:</b> Choropleth map over NYC showing the average score for restaurants in Seafood category. 
+    <b>Figure 4:</b> Choropleth map over NYC showing the average score for restaurants in Seafood category. In the right it shows a legend over the three intervals for the Grade a restaurant can get. Scores between 0-14 equals an A, 15-28 is a B, and 28+ is a C. If the zip code didnt have a restaurant for the chosen cuisine it got -1 in average grade and i colored gray in the map. 
   </figcaption>
 </figure>
 
