@@ -103,11 +103,6 @@ DBA
 Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category. 
 </p>
 
-
-<p style="text-align: justify; text-justify: inter-word;">
-ADD FIGURE 4 HERE!.
-</p>
-
 <figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   <img src="assets/img/Barchart_Asian.png" alt="Descriptive Alt Text" style="width: 100%;">
 </figure>
