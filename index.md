@@ -108,11 +108,21 @@ Although there is no distinct pattern indicating higher risks associated with sp
 ADD FIGURE 4 HERE!.
 </p>
 
+<figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
+  <img src="assets/img/Barchat_Asian.png" alt="Descriptive Alt Text" style="width: 100%;">
+</figure>
+<figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
+  {% include Asian_circlemap.html %}
+  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
+    <b>Figure 4:</b> Line chart illustrating the inspection count for each defined violation group, depending on the selected time period. Below the chart, an interactive range slider graph allows users to select specific data ranges. Additionally, a legend positioned to the right enables users to choose which violation group to display on the chart.
+  </figcaption>
+</figure>
+
 
 
 <br>
 
-<figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
+<figure id="figure6" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include choropleth_AVERAGESCOREASIAN.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
     <b>Figure 5:</b> Choropleth map over NYC showing the average score for restaurants in Seafood category. In the right it shows a legend over the three intervals for the Grade a restaurant can get. Scores between 0-14 equals an A, 15-28 is a B, and 28+ is a C. If the zip code didnt have a restaurant for the chosen cuisine it got -1 in average grade and i colored gray in the map.
@@ -120,7 +130,7 @@ ADD FIGURE 4 HERE!.
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-The analysis of <a href="#figure5">Figure 5</a> raises significant food safety concerns across a variety of restaurants in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
+The analysis of <a href="#figure6">Figure 5</a> raises significant food safety concerns across a variety of restaurants in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
 
 Moreover, the identification of surrounding areas as 'red zones' suggests that these hygiene issues may not be limited to seafood establishments but could be pervasive across multiple types of dining venues in the area.
 </p>
