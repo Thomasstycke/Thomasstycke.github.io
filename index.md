@@ -122,6 +122,8 @@ To explore this connection, <a href="#figure4">Figure 4</a> serves as a practica
     </figcaption>
 </figure>
 
+<br>
+
 <p style="text-align: justify; text-justify: inter-word;">
 In conclusion, our analysis underscores the importance of considering various factors when dining out in New York City. While certain cuisines, such as restaurants serving Asian food, pizza or hotdogs, may exhibit higher probabilities of critical hygiene conditions, the type of restaurant, whether part of a large chain or a local establishment, also plays a significant role. Our findings suggest that local shops may offer a safer dining experience compared to larger restaurant chains, which often struggle to maintain hygiene standards across multiple locations. Therefore, we advise diners to prioritize local establishments when selecting restaurants, ensuring a safer and more satisfying culinary experience in the city.
 </p>
