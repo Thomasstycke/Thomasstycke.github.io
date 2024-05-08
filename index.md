@@ -109,12 +109,13 @@ ADD FIGURE 4 HERE!.
 </p>
 
 <figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
-  <img src="assets/img/Barchat_Asian.png" alt="Descriptive Alt Text" style="width: 100%;">
+  <img src="assets/img/Barchart_Asian.png" alt="Descriptive Alt Text" style="width: 100%;">
 </figure>
+
 <figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include Asian_circlemap.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 4:</b> Line chart illustrating the inspection count for each defined violation group, depending on the selected time period. Below the chart, an interactive range slider graph allows users to select specific data ranges. Additionally, a legend positioned to the right enables users to choose which violation group to display on the chart.
+    <b>Figure 4:</b> A combined figure which shows the Not Critical ration for top 20 DBA for the selected cuisine. Under is a map, whichs shows the restaurants in those DBA. 
   </figcaption>
 </figure>
 
