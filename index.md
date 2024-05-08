@@ -98,7 +98,6 @@ DBA
 <p style="text-align: justify; text-justify: inter-word;">
 Now that we understand which cuisines have a higher probability of critical hygiene conditions, it's important to consider whether there's a connection between the inspection results and the type of restaurant being inspected. Are these restaurants part of large chains, or are they unique local establishments?
 To explore this connection, <a href="#figure4">Figure 4</a> serves as a practical guide for selecting restaurants, particularly when craving Asian cuisine. It displays the top 20 restaurants that consistently receive a "Not Critical" flag in inspection results. It's worth noting that a restaurant may appear multiple times if it is part of a chain, such as various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart indicates the frequency with which these restaurants pass inspections without critical issues, suggesting they uphold higher standards of cleanliness.
-
 </p>
 
 <figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
