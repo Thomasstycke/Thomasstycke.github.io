@@ -120,7 +120,7 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Even though, we can´t see a exact patern in 
+In reviewing the map in <a href="#figure5">Figure 5</a>, it's alarming to note that the highest average score for a zip code is 51.75, observed in zip code 10035. It's important to mention that any score above 14 is considered indicative of poor conditions. This score of 51.75 is significantly higher and highlights a severe issue that demands immediate attention and corrective measures to ensure public safety and health.
 </p>
 
 
