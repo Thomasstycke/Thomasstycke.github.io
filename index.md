@@ -104,6 +104,12 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </p>
 
 
+<p style="text-align: justify; text-justify: inter-word;">
+ADD FIGURE 4 HERE!.
+</p>
+
+
+
 <br>
 
 <figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
