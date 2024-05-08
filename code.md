@@ -348,7 +348,7 @@ slug: /code
 <span class="code-line">68</span> html_file_path = '/Users/thomasstycke/thomasstycke_site/_includes/bokeh_plot.html'
 <span class="code-line">69</span> output_file(html_file_path)
 <span class="code-line">70</span> 
-<span class="code-line">71</span> show(p)
+<span class="code-line">71</span> show(p) #
       </code></pre>
     </figure>
   </div>
