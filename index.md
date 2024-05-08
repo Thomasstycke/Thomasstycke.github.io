@@ -100,15 +100,9 @@ DBA
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Although there is no distinct pattern indicating higher risks associated with specific cuisines, <a href="#figure4">Figure 4</a> serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category.
+Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category.
 </p>
 
-<figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
-  {% include choropleth_AVERAGESCORESEAFOOD.html %}
-  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
-    <b>Figure 4:</b> Choropleth map over NYC showing the average score for restaurants in Seafood category. In the right it shows a legend over the three intervals for the Grade a restaurant can get. Scores between 0-14 equals an A, 15-28 is a B, and 28+ is a C. If the zip code didnt have a restaurant for the chosen cuisine it got -1 in average grade and i colored gray in the map.
-  </figcaption>
-</figure>
 
 <br>
 
@@ -120,7 +114,7 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-The analysis of <a href="#figure5">Figure 5</a> raises significant food safety concerns across a variety of restaurant categories in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
+The analysis of <a href="#figure5">Figure 5</a> raises significant food safety concerns across a variety of restaurants in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
 
 Moreover, the identification of surrounding areas as 'red zones' suggests that these hygiene issues may not be limited to seafood establishments but could be pervasive across multiple types of dining venues in the area.
 </p>
