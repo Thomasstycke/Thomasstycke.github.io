@@ -39,8 +39,6 @@ Guided by the latest inspection data, let's begin an in-depth exploration of vio
 The counts and frequencies of different violation groups vary. Concurrently, <a href="#figure1">Figure 1</a> offers insight into the distribution of violation types in recent inspections in NYC. Notably, Facility Sanitation emerges as the most prevalent violation, followed closely by Pest Control. In contrast, Chemical Safety records the lowest frequency, with only 20 instances recorded- which is still 20 too many.
 </p>
 
-
-
 <figure id="figure1" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include monthly_violation_counts.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
@@ -52,8 +50,7 @@ The counts and frequencies of different violation groups vary. Concurrently, <a 
 <br>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Additionally, the plot demonstrates a significant increase in the counts of most violation groups since mid-2022. This surge could be attributed to increased investment in inspections or stricter documentation procedures within this dataset.
-However, it's important to note that while Facility Sanitation appears as the most frequent violation, its frequency doesn't necessarily correlate with its level of criticality. To better understand the urgency of each violation group, critical conditions have been investigated and plotted in <a href="#figure2">Figure 2</a>.
+Additionally, the plot illustrates a notable increase in counts since mid-2022 for most violation groups, with the exceptions of Chemical Safety and Food Sourcing and Labeling, whose monthly counts consistently remain around 10 and 40, respectively. The surge around mid-2022 could be attributed to increased investment in inspections or stricter documentation procedures within this dataset. However, it's important to note that while Facility Sanitation appears as the most frequent violation, its frequency doesn't necessarily correlate with its level of criticality. To better understand the urgency of each violation group, critical conditions have been investigated and plotted in  <a href="#figure2">Figure 2</a>.
 </p>
 
 <figure id="figure2" style="max-width: 100%; display: block; margin: 0 auto;">
@@ -92,7 +89,6 @@ The type of cuisine may influence the likelihood of certain violations due to di
 
 <p style="text-align: justify; text-justify: inter-word;">
 <a href="#figure3">Figure 3</a> illustrates a consistent trend in the distribution of violation codes, where Facility Sanitation is the most common violation followed by Pest Control across all kitchens. However, considering the criticality distributions from <a href="#figure2">Figure 2</a>, we observe that cuisines with higher percentages of Temperature Control and Staff Hygiene violations pose a greater risk of being in a critical hygiene condition. Specifically, Asian and Pizza cuisines exhibit notably higher percentages in Temperature Control violations, at 16.8% and 15.6%, respectively. Additionally, Asian cuisine also shows a high percentage in Staff Hygiene violations, along with Hotdogs.
-Though, based on the latest inspections, it can be concluded that Hotdog Restaurants are the only ones not reported for a violation of Chemical Safety.
 </p>
 
 <b style="text-align: justify; text-justify: inter-word;">
@@ -100,14 +96,24 @@ DBA
 </b>
 
 <p style="text-align: justify; text-justify: inter-word;">
-Although there is no distinct pattern indicating higher risks associated with specific cuisines, Figure 4 serves as a practical guide. It plots the top 20 restaurants that consistently receive "Not Critical" flag from the inspections result. Notably, a restaurant can appear multiple times if it is part of a chain, like the various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart shows the frequency with which these restaurants pass inspections without critical issues, suggesting they maintain higher standards of cleanliness. If you have a preference for a particular type of cuisine, you can use this data to find establishments with the best health inspection records within that category. 
+Now that we understand which cuisines have a higher probability of critical hygiene conditions, it's important to consider whether there's a connection between the inspection results and the type of restaurant being inspected. Are these restaurants part of large chains, or are they unique local establishments?
+To explore this connection, <a href="#figure4">Figure 4</a> serves as a practical guide for selecting restaurants, particularly when craving Asian cuisine. It displays the top 20 restaurants that consistently receive a "Not Critical" flag in inspection results. It's worth noting that a restaurant may appear multiple times if it is part of a chain, such as various McDonald's locations in NYC. The "Not Critical Proportion" metric used in this chart indicates the frequency with which these restaurants pass inspections without critical issues, suggesting they uphold higher standards of cleanliness.
+
 </p>
 
 <figure id="figure4" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   <img src="assets/img/Barchart_Asian.png" alt="Descriptive Alt Text" style="width: 100%;">
+  <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
+    <b>Figure 4:</b> A bar plot paired with a related map. The bar plot highlights the safest choices of restaurants to visit based on the proportion of inspection results categorized as not critical. The map displays the locations of these restaurants, serving as a guide for selecting areas to visit. The minimum inspection count can be adjusted based on preferences, whether seeking a restaurant chain with multiple locations or a unique local restaurant
+  </figcaption>
 </figure>
 
 <br>
+
+<p style="text-align: justify; text-justify: inter-word;">
+<a href="#figure4">Figure 4</a> reveals a notable pattern: as inspection counts increase, the proportion of "Not Critical" results tends to decrease. This suggests that restaurant chains with multiple locations may struggle more to maintain hygiene standards. Therefore, opting for one of the local shops depicted in the figure would likely be a safer choice when seeking cleaner dining options.
+</p>
+
 
 <figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
   {% include Asian_circlemap.html %}
@@ -116,10 +122,14 @@ Although there is no distinct pattern indicating higher risks associated with sp
   </figcaption>
 </figure>
 
+<p style="text-align: justify; text-justify: inter-word;">
+In conclusion, our analysis underscores the importance of considering various factors when dining out in New York City. While certain cuisines, such as restaurants serving Asian food, pizza or hotdogs, may exhibit higher probabilities of critical hygiene conditions, the type of restaurant, whether part of a large chain or a local establishment, also plays a significant role. Our findings suggest that local shops may offer a safer dining experience compared to larger restaurant chains, which often struggle to maintain hygiene standards across multiple locations. Therefore, we advise diners to prioritize local establishments when selecting restaurants, ensuring a safer and more satisfying culinary experience in the city.
+</p>
 
-[View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
 
-[View Our Notebook Here (nbviewer)](https://nbviewer.jupyter.org/github/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
+[View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal.ipynb)
+
+[View Our Notebook Here (nbviewer)](https://nbviewer.jupyter.org/github/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal.ipynb)
 
 
 <head>
