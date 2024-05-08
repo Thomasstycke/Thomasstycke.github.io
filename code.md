@@ -1,6 +1,6 @@
 ---
 layout: code
-title: Code
+title: Notebook
 slug: /code
 ---
 
