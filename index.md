@@ -25,12 +25,13 @@ So, what is the most common violation type in NYC?
 Guided by the latest inspection data, let's begin an in-depth exploration of violation codes. Each code represents a unique type of health violation, carefully categorized into seven distinct groups, as outlined in <a href="#table1">Table 1</a>. These categories cover a spectrum of concerns, spanning from minor issues like improper facility maintenance to more serious matters such as unsanitary cooking conditions or bad staff hygiene.
 </p>
 
-<figure id="table1" style="max-width: 100%; display: block; margin: 0 auto;">
+<figure id="table1" style="width: 100%; display: block; margin-left: -15%;">
     {% include violation_groups.html %}
-    <figcaption style="text-align: justify;">
+    <figcaption style="max-width: 100%; margin-left: 15%; text-align: justify;">
         <b>Table 1:</b> Provides definitions of violation groups, along with their counts from the latest inspections and an example of a violation description within each group.
     </figcaption>
 </figure>
+
 
 <br>
 
