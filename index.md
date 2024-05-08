@@ -120,7 +120,9 @@ Although there is no distinct pattern indicating higher risks associated with sp
 </figure>
 
 <p style="text-align: justify; text-justify: inter-word;">
-In reviewing the map in <a href="#figure5">Figure 5</a>, it's alarming to note that the highest average score for a zip code is 51.75, observed in zip code 10035. It's important to mention that any score above 14 is considered indicative of poor conditions. This score of 51.75 is significantly higher and highlights a severe issue that demands immediate attention and corrective measures to ensure public safety and health.
+The analysis of <a href="#figure5">Figure 5</a> raises significant food safety concerns across a variety of restaurant categories in New York City, particularly highlighted by the extremely high hygiene score of 51.75 in zip code 10035. This score, far exceeding acceptable levels, places this area solidly within Grade C, a category indicating serious public health risks.
+
+Moreover, the identification of surrounding areas as 'red zones' suggests that these hygiene issues may not be limited to seafood establishments but could be pervasive across multiple types of dining venues in the area.
 </p>
 
 
