@@ -110,7 +110,7 @@ Although there is no distinct pattern indicating higher risks associated with sp
 <br>
 
 <figure id="figure5" style="width: 130%; margin-left: -15%; margin-right: -15%; text-align: center;">
-  {% include Asian_circlemap.html.html %}
+  {% include Asian_circlemap.html %}
   <figcaption style="max-width: 100%; margin-left: auto; margin-right: auto; text-align: justify;">
     <b>Figure 4:</b> A combined figure which first shows the 'Not Critical' ratio for top 20 DBA for the selected cuisine. Under is a map, whichs shows all the restaurants in those DBA. 
   </figcaption>
