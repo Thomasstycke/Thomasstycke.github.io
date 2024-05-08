@@ -84,7 +84,6 @@ The type of cuisine may influence the likelihood of certain violations due to di
   <b>Figure 3:</b> Pie-charts for the different cuisines showing the distribution of violation codes reported.
 </figcaption>
 
-
 <br>
 
 <p style="text-align: justify; text-justify: inter-word;">
