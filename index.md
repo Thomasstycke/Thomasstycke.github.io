@@ -127,6 +127,8 @@ Moreover, the identification of surrounding areas as 'red zones' suggests that t
 
 [View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
 
+[View Our Notebook Here (nbviewer)](https://nbviewer.jupyter.org/github/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal-kopi.ipynb)
+
 
 <head>
   <title>Contributions</title>
