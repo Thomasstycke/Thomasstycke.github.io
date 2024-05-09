@@ -114,12 +114,14 @@ To explore this connection, <a href="#figure4">Figure 4</a> serves as a practica
 
 <br>
 
+<!--
 <figure id="figure5" style="max-width: 100%; display: block; margin: 0 auto;">
     {% include Asian_circlemap.html %}
     <figcaption style="text-align: justify;">
         <b>Figure 5:</b> Stacked Bar Chart displaying the count of inspections dependent of the Violation group. The stacked bars indicated the percentage of the count given the flag critical and not critical.
     </figcaption>
 </figure>
+-->
 
 <br>
 
