@@ -4,6 +4,5 @@ title: Notebook
 slug: /code
 ---
 
-[View Our Notebook Here](https://github.com/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal.ipynb)
-
+[View Our Notebook Here (nbviewer)](https://nbviewer.jupyter.org/github/Thomasstycke/Thomasstycke.github.io/blob/main/FinalProjectFinal.ipynb)
 
